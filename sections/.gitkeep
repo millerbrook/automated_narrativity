@@ -1,0 +1,11 @@
+# Sections
+
+Optional: Place modular LaTeX sections here for better organization.
+
+You can include them in your main document with:
+```latex
+\input{sections/introduction}
+\input{sections/methodology}
+```
+
+This is useful when the article grows longer.
