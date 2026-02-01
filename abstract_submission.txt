@@ -1,0 +1,23 @@
+TITLE: The Path to Automated Narrative Processing: Narrativity, Uncertainty, and Slow Feature Analysis
+
+AUTHOR: Brook Miller
+AFFILIATION: Center for Humanities and Digital Research, University of Central Florida
+EMAIL: brook.miller@ucf.edu
+
+---
+
+ABSTRACT:
+
+How does narrative figure into the drive towards artificial intelligences that bear comparison to human cognition? There is a robust literature about narrative computation, focusing on the analysis of narrative structures, as well as large language models' ability to generate narratives. While these directions automate two high-level human cognitive activities, the processes do not resemble how narrative structures are generated and processed into abstractions and memories in human thinking. This presentation describes the function of ongoing narrative processing in low-level cognition, followed by consideration of two robust areas of research that might advance our understanding and anticipate the role it might play in artificial intelligence. The presentation begins by considering the problem ongoing narrative processing helps us solve. I will review and update a model of narrativity as an emergent feature in event processing predicated on parsing event boundaries via extant cognitive models, uncertainty reduction, affect, and attributing meaning (Miller, 2024). I then focus on two key, but limited, topics within this field. In cognitive science, new models of decision-making theorize of key role for uncertainty in time segmentation and abstraction in event processing (Wang et al., 2025). In artificial intelligence, 'slow feature analysis' works to identify event constituents and define event boundaries (Song & Zhao, 2022). I will argue for relationships between these processes and emergent narrativity in event processing. Taken together, these perspectives contribute to research directions in cognitive studies, artificial intelligence, and narrative theory around the question of what human-like event processing would look like in AI. Finally, I consider embodiment, processing limitations, and the ethics of this research direction.
+
+KEYWORDS: narrative processing, artificial intelligence, event cognition, AGI, narrative computation
+
+---
+
+REFERENCES:
+
+Miller, B. (2024). Narrativity in cognition. Springer.
+
+Song, P., & Zhao, C. (2022). Slow down to go better: A survey on slow feature analysis. IEEE Transactions on Neural Networks and Learning Systems, 35(3), 3416-3436.
+
+Wang, M. B., Lynch, N., & Halassa, M. M. (2025). The neural basis for uncertainty processing in hierarchical decision making. Nature Communications, 16(1), 9096.
