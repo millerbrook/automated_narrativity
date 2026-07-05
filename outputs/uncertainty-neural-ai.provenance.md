@@ -1,0 +1,22 @@
+# Provenance: Uncertainty Processing in Neural Systems and AI Frameworks
+
+- **Date:** 2026-04-15
+- **Rounds:** 1 (direct research by lead; alpha paper-read API unavailable, compensated with web fetches)
+- **Sources consulted:** 45+ across academic papers, web sources, documentation, and software repositories
+- **Sources accepted:** 33 (numbered in the final report)
+- **Sources rejected:** 0 dead links; ~12 search results excluded as tangential
+- **Verification:** PASS WITH NOTES
+  - Bayesian brain formulation verified against Knill & Pouget 2004 (full PDF available via gwern.net)
+  - MC dropout = approximate BNN claim verified against Gal & Ghahramani 2016 PMLR proceedings
+  - Predictive coding math cross-checked against Millidge et al. 2021 review abstract and Rao & Ballard 1999
+  - Deep ensembles > BNNs under shift claim verified against Ovadia et al. 2019 (arXiv:1906.02530)
+  - Conformal prediction coverage guarantee verified against Shafer & Vovk 2008 JMLR tutorial
+  - Software libraries verified via direct web search (PyPI, GitHub, official sites)
+  - Temperature scaling for calibration verified against Guo et al. 2017 ICML proceedings
+  - **NOTE:** Precision-attention connection (§6.1) is labeled as an inference — suggestive structural parallel, no formal proof exists
+  - **NOTE:** Neural sampling hypothesis evidence (Berkes et al. 2011, 2016) verified via Cell.com and PMC links, but the interpretation remains debated in the field
+  - **NOTE:** LLM uncertainty taxonomy (Liu et al. 2025) is recent and not yet widely validated
+- **Plan:** outputs/.plans/uncertainty-neural-ai.md
+- **Research files:** Direct tool calls (no intermediate files — research executed inline)
+- **Draft:** outputs/.drafts/uncertainty-neural-ai-draft.md
+- **Final output:** outputs/uncertainty-neural-ai.md

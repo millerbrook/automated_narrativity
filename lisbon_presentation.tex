@@ -1,0 +1,229 @@
+% Beamer Presentation: Lisbon Conference Talk
+\documentclass[aspectratio=169]{beamer}
+
+% Theme and colors - customize as needed
+\usetheme{Madrid}
+\usecolortheme{default}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+% Bibliography
+\usepackage[backend=bibtex,style=authoryear]{biblatex}
+\addbibresource{references.bib}
+
+% Metadata
+\title{From Plausibility Machines to Narrative Minds}
+\subtitle{Vision, Attention, and the Architecture of Artificial Cognition}
+\author{Your Name}
+\institute{Your Institution}
+\date{\today}
+
+\begin{document}
+
+% Title slide
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Outline
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+%=============================================================================
+\section{An Analogy: Human and Computer Vision}
+%=============================================================================
+
+\begin{frame}{An Analogy: Human and Computer Vision}
+  \begin{itemize}
+    \item<1-> \textbf{Edge detection} --- low-level feature extraction
+    \item<2-> \textbf{Abstraction} --- features aggregate into intermediate representations
+    \item<3-> \textbf{Object recognition} --- abstraction resolves into a labeled category
+  \end{itemize}
+
+  \pause
+  \vspace{1em}
+  \begin{block}{Why this analogy}
+    Raw input $\rightarrow$ abstraction $\rightarrow$ recognition is a useful template for thinking about cognitive architecture generally. Where does narrative fit in this pipeline?
+  \end{block}
+\end{frame}
+
+%=============================================================================
+\section{Chiang, Tufekci, and the Phenomenological Critique}
+%=============================================================================
+
+\begin{frame}{Plausibility Machines}
+  \begin{itemize}
+    \item Chiang and Tufekci: LLMs as \alert{plausibility machines} \parencite{chiang_plausibility,tufekci2026hype} --- producing text that reads as coherent without underlying understanding
+    \item The move from \emph{simulating} consciousness to \emph{having} consciousness is often treated as small, or even inevitable
+  \end{itemize}
+
+  \pause
+  \vspace{1em}
+  \begin{block}{Claim}
+    That leap is in fact massive, and unlikely.
+  \end{block}
+\end{frame}
+
+\begin{frame}{The Phenomenological Critique}
+  \begin{block}{Central claim}
+    There is no ``what it is like'' for a current AI system.
+  \end{block}
+
+  \pause
+  \vspace{1em}
+  \begin{itemize}
+    \item<2-> \textbf{What it is:} procedural circuits --- comparable to functions in a CS sense
+    \item<3-> \textbf{What is (partly) missing:} valence and salience
+  \end{itemize}
+\end{frame}
+
+%=============================================================================
+\section{``Attention Is All You Need''}
+%=============================================================================
+
+\begin{frame}{``Attention Is All You Need'' \parencite{vaswani2017attention}}
+  \begin{itemize}
+    \item What attention consists of, for an LLM
+    \item Stacked transformers and attention
+    \item Loss minimization and static associative valuation
+  \end{itemize}
+\end{frame}
+
+%=============================================================================
+\section{Coglinks and Uncertainty}
+%=============================================================================
+
+\begin{frame}{Coglinks and Uncertainty}
+  \begin{itemize}
+    \item Circuits imitated
+    \item Predefined decision choices
+  \end{itemize}
+
+  % cf. \cite{wang2025neural} on hierarchical uncertainty processing
+\end{frame}
+
+%=============================================================================
+\section{Time, Prediction, and Memory}
+%=============================================================================
+
+\begin{frame}{Time, Prediction, and Memory}
+  \begin{itemize}
+    \item Predictive processing vs.\ uncertainty
+    \item Episodic and semantic memory
+  \end{itemize}
+\end{frame}
+
+%=============================================================================
+\section{Phenomenological Experience and Emotion}
+%=============================================================================
+
+\begin{frame}{Phenomenological Experience and Emotion}
+  \begin{block}{Open question}
+    What would have to be true of a system for phenomenological experience and emotion --- not merely their outward signatures --- to be present?
+  \end{block}
+
+  % Add discussion points
+\end{frame}
+
+%=============================================================================
+\section{Narrative in Cognition}
+%=============================================================================
+
+\begin{frame}{Narrative in Cognition \parencite{miller2024narrativity}}
+  \begin{itemize}
+    \item<1-> As \textbf{active inference}
+    \item<2-> As an \textbf{abstraction scaffold}
+  \end{itemize}
+\end{frame}
+
+%=============================================================================
+\section{What Architecture Is Closer?}
+%=============================================================================
+
+\begin{frame}{What Architecture Is Closer?}
+  \begin{itemize}
+    \item Self-salience models
+    \item Less terrifying possibilities that simulate emotion
+  \end{itemize}
+\end{frame}
+
+%=============================================================================
+\section{What Training Is Required?}
+%=============================================================================
+
+\begin{frame}{What Training Is Required?}
+  \begin{itemize}
+    \item Direction 1: [To be developed]
+    \item Direction 2: [To be developed]
+  \end{itemize}
+\end{frame}
+
+%=============================================================================
+\section{How Might a Narrative-Processing AI Differ?}
+%=============================================================================
+
+\begin{frame}{How Might a Narrative-Processing AI Differ?}
+  \begin{enumerate}
+    \item<1-> Not procedural?
+    \item<2-> Predictive processing (with respect to dynamic inputs)?
+    \item<3-> Nested experiential hierarchies --- including reflection on what experiences reveal about self-function?
+  \end{enumerate}
+
+  \pause
+  \vspace{1em}
+  \begin{block}{Thus}
+    \alert{A closer semblance of self.}
+  \end{block}
+\end{frame}
+
+%=============================================================================
+\section{Notes / Parking Lot}
+%=============================================================================
+
+\begin{frame}[allowframebreaks]{Notes / Parking Lot}
+  % Scratch space for ideas, anecdotes, and examples to develop or place elsewhere
+  \footnotesize
+  \begin{itemize}
+    \item \textbf{Oh no Waymo} --- % TODO: develop; candidate anecdote for the vision analogy
+      \\ \emph{possible example of imitation-without-understanding in the wild}
+
+      \vspace{0.5em}
+      Waymos and other AIs harnessed to bodies perform processing operations related to moving through the world with particular sets of prescribed motivations. There's lots to question about the notion of `motivations', which I hope to do in another forum. But focusing for now just on the problem of regulating a body moving in time through space, detecting environmental conditions is an ongoing, dynamic problem. At its core, it requires recognizing other agents and dynamic forces in the world. That is, slow feature analysis is a baseline for experiential processing \parencite{song2022slow}. It builds temporal parsing into experiencing. Slow feature analysis combines with valuative processing (salience and valence) that is itself dynamic and interactive. In terms of attention, a stabilization in valuation can be a catalyst of shifting attention, which marks temporal experience with subjective meaning.
+
+      \vspace{0.5em}
+      \emph{Open questions:} Can an experiencing AI have a semblance of these processes? How might it relate to the question of whether the AI has subjective experience?
+
+    \item \textbf{Hebbian learning vs.\ gradient descent} --- % TODO: develop
+      \\ \emph{Hebbian as local; gradient descent as global}
+  \end{itemize}
+\end{frame}
+
+%=============================================================================
+\section{Conclusion}
+%=============================================================================
+
+\begin{frame}{Thank You}
+  \centering
+  \textbf{Thank you!}
+
+  \vspace{0.5em}
+
+  \textit{Questions?}
+\end{frame}
+
+%=============================================================================
+% References
+%=============================================================================
+
+\begin{frame}[allowframebreaks]{References}
+  \printbibliography
+\end{frame}
+
+\end{document}
