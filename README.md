@@ -6,7 +6,7 @@ A conference presentation (and potential article) exploring how narrative figure
 
 How does narrative figure into the drive towards artificial intelligences that bear comparison to human cognition?
 
-There is a robust literature about narrative computation, focusing on the analysis of narrative structures. Large language models can be leveraged to generate narratives. While these two directions automate two high-level human cognitive activities, the processes do not resemble how narrative structures are recognized and created in human thinking.
+There is a robust literature about narrative computation, focusing on the analysis of narrative structures. Large language models can be leveraged to generate narratives. While these directions automate two high-level human cognitive activities, the processes do not resemble how narrative structures are recognized and created in human thinking.
 
 This presentation describes the function of ongoing narrative processing in human intelligence, followed by consideration of the state of artificial intelligence in approximating that functionality.
 
