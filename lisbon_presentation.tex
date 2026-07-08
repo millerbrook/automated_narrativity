@@ -96,6 +96,25 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Attention, Contrasted: Weights vs.\ Awareness}
+  \begin{itemize}
+    \item<1-> Transformer attention: a computed weighting over tokens in a context window --- not modeled as an object of the system's own awareness
+    \item<2-> Webb and Graziano's \textbf{Attention Schema Theory} \parencite{webbgraziano2015attention}: awareness is \emph{an internal model of attention}
+  \end{itemize}
+
+  \pause
+  \vspace{1em}
+  \begin{block}{``A creature with an attention schema...''}
+    ``...should be a creature that concludes it is aware'' \parencite{webbgraziano2015attention}
+  \end{block}
+
+  \pause
+  \vspace{1em}
+  \begin{alertblock}{Open possibility}
+    Could an explicit, internal model \emph{of the system's own attention} --- not just attention weights themselves --- point toward AI architectures with a closer semblance of awareness? (cf.\ Section ``What Architecture Is Closer?'')
+  \end{alertblock}
+\end{frame}
+
 %=============================================================================
 \section{Coglinks and Uncertainty}
 %=============================================================================
@@ -107,6 +126,13 @@
   \end{itemize}
 
   % cf. \cite{wang2025neural} on hierarchical uncertainty processing
+  % NOTE (to develop): CogLink advances neural modeling of hierarchical, model-based/model-free
+  % decision-making, but does not address *ill-defined problems* -- where no predefined script or
+  % solution path applies. My Ch. 8 material frames this as a gap "vexing for schema theory"
+  % generally; since CogLink is in effect a neural schema/model-coordination account, the same gap
+  % plausibly applies to it. Weak-narrative dynamics (gist extraction, event simulation) are a
+  % candidate mechanism for what keeps functioning when the model itself has no applicable script.
+  % See quotes.md, Miller Ch. 8 section, (b) intervention point on ill-defined problems.
 \end{frame}
 
 %=============================================================================
@@ -152,6 +178,10 @@
     \item Self-salience models
     \item Less terrifying possibilities that simulate emotion
   \end{itemize}
+
+  % NOTE: "Self-salience models" connects back to Attention Schema Theory (Webb & Graziano),
+  % introduced in the "Attention Is All You Need" section as a contrast to transformer attention --
+  % an explicit internal model of one's own attention is itself a self-salience mechanism.
 \end{frame}
 
 %=============================================================================

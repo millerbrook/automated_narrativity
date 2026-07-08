@@ -55,6 +55,83 @@ Bib key: `bouizegarene2024narrative`. Was not yet in the bib — added.
 
 - Possible use: could extend "Narrative in Cognition" toward a social/collective dimension (master narratives as prediction-synchronization across a group) — not currently in the outline, but worth flagging as a possible addition
 
+## Brook Miller — *Narrativity in Cognition*, Ch. 8: "Narrativity in Higher Order Cognition" (Springer Nature, 2023)
+
+Bib key: `miller2023higherorder` (added; the existing `miller2024narrativity` entry is the whole book, this is the specific chapter). My own chapter, read in full — quotes below include both my own prose and short excerpts I myself quote from other researchers (page numbers are to the chapter; where I'm quoting someone else, their original page number is given in parentheses as it appears in my text).
+
+**Brainstorm note (mine, verbatim):**
+
+> I think the gist of my presentation might turn more on the 'model-based system' idea Wang et al use. In particular, my previous research has emphasized how affective and temporal cognition dynamically shapes and is in turn shaped by 'models'; that there exists a weak narrativity in event processing related to equilibrium-disequilibrium and action-fact patterns, and that this weak narrativity leads to 'gists'. Moreover, models (schemas) are modified by weakly narrative experiences just as they are shaped by them, and in some cases -- like 'ill-defined problems' -- models can fail but weakly narrative dynamics can still emerge. These dynamics, in turn, feed into the dynamic, ongoing self-evaluation that shapes and is shaped by narrative identity.
+
+### (a) Directly supporting the brainstormed ideas
+
+> "These features include temporal boundaries set by patterns of equilibrium-disequilibrium-equilibrium, peak and end/fact experiences, spatial and agentive boundaries set by relational valuations, and sequential bindings driven by relations (typically causal) but heavily mediated by context... Emergent narrativity is provisional and fragmentary, rather than closed form or formulaic." (p. 199)
+
+> "We process experience into chunked event structures via schema that create boundary definitions at crucial break points (such as, as mentioned above, equilibrium-disequilibrium-equilibrium patterns, or action-fact structures)." (p. 211)
+
+> Gists are "'high-level story elements that are central and critical to the overall plot'; they 'contain multiple units and their interrelationships,' and 'refer to a specific event...not based on multiple episodes'" (Ghosh and Gilboa, citing Moscovitch, p. 110, qtd. p. 210)
+
+> "Gists are complexes of valuative elements—rather than simple unvalued particulars—with deep links to the outcome structures of narratives, and which are refined via (and which in turn contribute to) schemas or connectionist networks. More simply put, particulars from our experiences have emergent meanings that shape our general understanding while aligning our memories into flexible narrative patterns." (p. 212–213)
+
+> "Gists appear to be vital to another function which is vexing for schema theory: processing ill-defined problems via scenario simulation. In 'ill-defined problems,' there is 'no specific script or solution path that can be applied' (Sheldon et al. 2011, p. 2). For ill-defined, or 'open-ended' problems, because there's no solution to store semantically, 'it [is] likely that solutions to such problems…rely on an event simulation strategy'" (p. 211)
+
+> "Sheldon and colleagues cite findings... that episodic memory is used to imagine future events to hypothesize that episodic memory processes are implicated in solving ill-defined problems, particularly because of the flexibility and 'relational binding' capabilities of episodic memory. The mechanisms that initiate and perform these simulations are speculative but might include analogical processing at the beginning to identify similar problems from the past, the associated solutions to which would provide material from which solution simulations might be built." (p. 211–212)
+
+> "Beatty, Morgan, and Wise emphasize that narrative simulations of 'counterfactual' events and structured around outcomes help reveal the contingency (and therefore meaning) of actual events. Additionally, problem-solving via simulation works by creating a phenomenology of feeling associated with particular scenarios, allowing to 'pre-feel' possible experiences (Schacter et al. 2015)." (p. 212)
+
+> "Event simulation requires that subjects conceive of an outcome derived from beginning and ending value conditions of selected actors... the processing of their dynamism and relationality... requires a capacity for complex time-extended imagining: the ability to coordinate multiple agents and contextual factors into a meaningful sequence, resulting in an event (or chain of events)." (p. 212)
+
+> "Current research on schema... suggests the following: narratives are schema-dependent, emergent in experiential processing, component to gist processing, and refined in memory processes." (p. 211)
+
+> "Rather than being a fixed substance, it is the ongoing self-evaluative processing by the subject of the self in present experiences in relation to past experiences, and vice versa. This dynamism is partly due to the dynamism of a subject's immediate, intermediate-term, and long-term goals." (p. 216)
+
+> "We find, in contrast to much of the established research, that narrative construction is in part facilitated by the self-valuations emerging from the weakly narrative nature of experience." (p. 217)
+
+- Possible use: this whole cluster is a direct expansion of Section "Narrative in Cognition" (both "as Active Inference" and "as abstraction scaffold" bullets) and could justify a new sub-point on gists/schema-modification as the mechanism underneath both.
+
+### (b) Intervention points relative to the other sources in this document
+
+- **Re: Wang, Lynch, Halassa (CogLink) — the ill-defined problems gap.** CogLink advances neural modeling of hierarchical, model-based/model-free decision-making, but (as far as the paper goes) it models decisions with tractable structure — it doesn't address *ill-defined problems*, where "there is 'no specific script or solution path that can be applied.'" My chapter frames this as "vexing for schema theory" generally (p. 211) — and CogLink is, in effect, a neural schema/model-coordination account, so the same gap plausibly applies to it. Weak-narrative dynamics (gist extraction, event simulation, "pre-feeling" of scenarios) is the candidate mechanism that keeps functioning when the model itself has no applicable script. This is a strong central-thesis point: narrative processing as what picks up where model-based coordination runs out.
+
+> "The models of cognition reviewed in earlier chapters—the predictive processing model (PPM), the cognitive-emotional model, and the embodied model—are characterized by dynamic valuation, which entails self-referential elements." (p. 202)
+
+- Re: **Wang, Lynch, Halassa** — their thalamus-as-plasticity-locus claim is pitched at the neural/circuit level; this quote (and the surrounding discussion of PPM/cognitive-emotional/embodied models) offers a cognitive-level account of *what* is being coordinated between model-free and model-based systems: self-referential, affective valuation. Could frame the "circuits imitated" bullet in "Coglinks and Uncertainty" as circuits imitating a mechanism, without yet imitating what the mechanism is coordinating for.
+
+> Zahavi and Kriegel: "for-me-ness is not in the first instance an aspect of *what* is experienced but of *how* it is experienced; not an object of experience, but a constitutive manner of experiencing" (p. 38, qtd. p. 202)
+
+- Re: **Tufekci/Chiang "no what it is like"** — gives a technical vocabulary for the phenomenological critique beyond flat assertion: the claim isn't just that AI lacks some experiential content, but that it may lack valuation as a *manner* of processing (my own claim, same page, is that valuation is intrinsic to, not a supplement of, perception). Useful for sharpening rather than just repeating the Tufekci/Chiang line.
+
+> Christoff et al.: self-specifying tasks "can be expected to enhance the self-experience of being a cognitive–affective agent" (p. 109, qtd. p. 203)
+
+- Re: **Bouizegarene et al.** (narrative as active inference, identity narratives, master narratives) — strong direct resonance throughout; this document's self-evaluation and self-valuation quotes above (p. 216–217) parallel their claim about identity narratives producing "global coherence" and "self-continuity." The intervention: Bouizegarene et al. describe *that* narrative does this model-updating work at the level of active inference; this chapter's gist-extraction/schema-modification account is a candidate mechanism for *how*, at a finer grain.
+
+- Re: **Robert Long** (LLM/human differences, differing prediction targets) — the PPM/cognitive-emotional/embodied models quote (p. 202) is a resource for specifying exactly what "very different things" humans predict, in contrast to next-token prediction — namely self-referential, affectively-valued, embodied states, not just different content but a different manner of prediction.
+
+### (c) Ch. 6, "Events and Weak Narrativity" — Sect. 6.2 "Attention and Events" (pp. 124–130)
+
+Bib key: `miller2023eventsweaknarrativity`. Pulled for the human-vs-LLM attention contrast — the goal being to show human attention as bound up with an awareness model, embodied selection, and event segmentation, rather than a fixed weighting computation.
+
+> "Attention is fundamental to time experiences. It is simultaneously responsive to environmental conditions and subject to intentional control." (p. 124)
+
+> Webb and Graziano's Attention Schema Theory holds that "top–down versus bottom–up distinction[s] in attention research…[are] flawed…because some effects do not fall neatly into either category" (p. 4, qtd. p. 124)
+
+> "Awareness is dynamic and selective but continuous: 'awareness is an internal model of attention useful for the control of attention' (p. 5). This internal model creates a sense of 'subjective awareness. A creature with an attention schema should be a creature that concludes it is aware' (p. 6)." (p. 124)
+
+> Webb and Graziano describe the observing perspective produced by our attention schema as "'an amorphous, nonphysical, internal power, an ability to know, to experience, and to respond, a roving mental focus—the essence of covert attention without the underpinning details'" (p. 43, qtd. p. 124)
+
+> "The awareness model, then, comprises a selection from the attentional field that reflects particular priorities. The model provides subjective continuity to our experiences. How these selections are made and coordinated in dynamic, unfolding time, and how they are formulated into units that we can recall and ultimately use to guide our future attention shapes event construction." (p. 125)
+
+> Thomas Shipley: events "'appear to be a fundamental unit of experience'" (p. 5, qtd. p. 125)
+
+> "The events' passages entail both an initial attention change (to the tree or spies) and a closing attentional change (either to other stimuli or to rumination on the implication of the events)." (p. 128)
+
+> Shipley on event-feature binding: "'To the extent that separate aspects of an event are processed and combined, we must consider how event-feature binding is achieved. In an event, the space-time behavior of objects must be combined'" (p. 21, qtd. p. 130)
+
+- Possible use: strongest single link for the human/LLM attention contrast is the p. 125 quote — attention isn't just a weighting mechanism, it's an ongoing selection-and-coordination process that *produces* the event units later recalled and that guides future attention. That's a functional claim (attention → event segmentation → memory → future attention) that transformer self-attention, as a per-token weighting over a fixed context window, doesn't obviously have an analogue for.
+- **★ In use:** the Attention Schema Theory quotes (p. 124, "internal model of attention" / "a creature with an attention schema should be a creature that concludes it is aware") are now in the slides — new frame "Attention, Contrasted: Weights vs. Awareness" right after "'Attention Is All You Need'" in `lisbon_presentation.tex`. Cited directly via new bib key `webbgraziano2015attention` (exact citation confirmed from Ch. 6's own reference list: Webb, T. W., & Graziano, M. S. A. (2015), *Frontiers in Psychology*, 6, Article 500).
+- **★ Architecture angle:** that frame ends on an open question — could an explicit internal model *of the system's own attention* (not just attention weights) point toward AI architectures closer to awareness? This forward-links to Section "What Architecture Is Closer?" (the "Self-salience models" bullet), where a comment note now flags the connection.
+- Note: page numbers above are to the PDF I was given (`N&C6.pdf`), matching the typeset page numbers (124–130), not PDF page indices.
+
 ## Other
 
 <!-- add candidate quotes here -->
