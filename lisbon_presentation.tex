@@ -14,14 +14,14 @@
 \usepackage{tikz}
 
 % Bibliography
-\usepackage[backend=bibtex,style=authoryear]{biblatex}
+\usepackage[backend=biber,style=authoryear]{biblatex}
 \addbibresource{references.bib}
 
 % Metadata
 \title{From Plausibility Machines to Narrative Minds}
 \subtitle{Vision, Attention, and the Architecture of Artificial Cognition}
-\author{Your Name}
-\institute{Your Institution}
+\author{Brook Miller}
+\institute{Center for Humanities and Digital Research, University of Central Florida}
 \date{\today}
 
 \begin{document}
@@ -37,6 +37,50 @@
 \end{frame}
 
 %=============================================================================
+\section{Plausibility Machines and the Bootstrapping Problem}
+%=============================================================================
+
+\begin{frame}{Word Search Junkies}
+  \begin{itemize}
+    \item Since ChatGPT's release (Dec.\ 2022), a wave of claims that AGI is imminent
+    \item<2-> Pushback: Chiang and Tufekci --- LLMs as \alert{plausibility machines} \parencite{chiang_plausibility,tufekci2026hype}, producing text that reads as coherent without underlying understanding
+  \end{itemize}
+
+  \pause
+  \vspace{1em}
+  \begin{block}{Long's reframing \parencite{long2026experience}}
+    \textbf{Sneerer:} ``just predicting the next token'' $\Rightarrow$ therefore not conscious \\
+    \textbf{Defender:} humans are unreliable and contradictory too $\Rightarrow$ so what's the difference?
+  \end{block}
+
+  \pause
+  \vspace{1em}
+  \begin{alertblock}{The more interesting question}
+    Not \emph{whether} LLMs and humans differ, but precisely \emph{how} --- and what that implies.
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}{The Bootstrapping Problem}
+  \begin{block}{Long \parencite{long2026experience}}
+    LLMs ``learned language first and would bootstrap any potential experiences from that, whereas humans can have experiences independently of using language to describe them.''
+  \end{block}
+
+  \pause
+  \vspace{1em}
+  \begin{itemize}
+    \item<2-> It may make sense to ask what it is like to be a bat; asking the same of an LLM is dubious
+    \item<3-> \textbf{What an LLM is:} procedural circuits --- comparable to functions in a CS sense
+    \item<4-> \textbf{What is (partly) missing:} valence and salience
+  \end{itemize}
+
+  \pause
+  \vspace{1em}
+  \begin{alertblock}{Claim}
+    If we want AI with a closer semblance to human cognition, a language-first architecture may be the wrong place to start. Look elsewhere.
+  \end{alertblock}
+\end{frame}
+
+%=============================================================================
 \section{An Analogy: Human and Computer Vision}
 %=============================================================================
 
@@ -49,39 +93,58 @@
 
   \pause
   \vspace{1em}
-  \begin{block}{Why this analogy}
-    Raw input $\rightarrow$ abstraction $\rightarrow$ recognition is a useful template for thinking about cognitive architecture generally. Where does narrative fit in this pipeline?
+  \begin{block}{Why look here}
+    Vision research offers embodied, non-linguistic experience-formation to study --- a candidate escape from the bootstrapping problem. Raw input $\rightarrow$ abstraction $\rightarrow$ recognition is a useful template for thinking about cognitive architecture generally. Where does narrative fit in this pipeline?
   \end{block}
 \end{frame}
 
 %=============================================================================
-\section{Chiang, Tufekci, and the Phenomenological Critique}
+\section{Event Segmentation: A Basis for Experience}
 %=============================================================================
 
-\begin{frame}{Plausibility Machines}
+\begin{frame}{Oh No, Waymo}
   \begin{itemize}
-    \item Chiang and Tufekci: LLMs as \alert{plausibility machines} \parencite{chiang_plausibility,tufekci2026hype} --- producing text that reads as coherent without underlying understanding
-    \item The move from \emph{simulating} consciousness to \emph{having} consciousness is often treated as small, or even inevitable
+    \item Waymos endlessly circling roundabouts and neighborhoods --- fair grounds for skepticism
+    \item<2-> But moving, embodied AI does not \emph{ipso facto} share the LLM's bootstrapping problem
+    \item<3-> Regulating a body moving through space is an ongoing, dynamic problem: recognizing other agents and dynamic forces in the world
   \end{itemize}
 
   \pause
   \vspace{1em}
-  \begin{block}{Claim}
-    That leap is in fact massive, and unlikely.
+  \begin{block}{Slow feature analysis \parencite{song2022slow}}
+    A baseline for experiential processing --- it builds temporal parsing into experiencing.
   \end{block}
 \end{frame}
 
-\begin{frame}{The Phenomenological Critique}
-  \begin{block}{Central claim}
-    There is no ``what it is like'' for a current AI system.
+\begin{frame}{Event Segmentation}
+  \begin{block}{What an event is, minimally}
+    ``a segment of time at a given location that is perceived by an observer to have a beginning and an end'' \parencite[p.~128]{miller2023eventsweaknarrativity}
   \end{block}
 
   \pause
   \vspace{1em}
+  \begin{block}{Event Segmentation Theory (EST)}
+    ``One central proposal of the EST model is that event segmentation is a spontaneous outcome of ongoing perception and arises at points where perceptual predictions begin to fail or change\ldots The period of epoch between two such consecutive changes current mental models is an event.'' \parencite[p.~135]{miller2023eventsweaknarrativity}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Prediction, Revisited}
   \begin{itemize}
-    \item<2-> \textbf{What it is:} procedural circuits --- comparable to functions in a CS sense
-    \item<3-> \textbf{What is (partly) missing:} valence and salience
+    \item Sneerer/defender critique centers on LLMs' prediction as reductive: next token, given previous tokens
+    \item<2-> But perceptual, event-driving prediction is different in kind:
   \end{itemize}
+
+  \pause
+  \vspace{1em}
+  \begin{block}{}
+    ``As an event proceeds, predictions are relatively accurate. However, as it ends, prediction error increases, causing a reset of the event model. When such a reset occurs, an event boundary is set.'' \parencite[p.~135]{miller2023eventsweaknarrativity}
+  \end{block}
+
+  \pause
+  \vspace{1em}
+  \begin{alertblock}{This requires online processing of ongoing experience}
+    Two research threads follow: \textbf{slow feature analysis} and \textbf{uncertainty processing}.
+  \end{alertblock}
 \end{frame}
 
 %=============================================================================
@@ -120,12 +183,17 @@
 %=============================================================================
 
 \begin{frame}{Coglinks and Uncertainty}
+  \begin{block}{Second research thread, promised above}
+    Uncertainty processing in hierarchical decision-making \parencite{wang2025neural}
+  \end{block}
+
+  \pause
+  \vspace{1em}
   \begin{itemize}
     \item Circuits imitated
     \item Predefined decision choices
   \end{itemize}
 
-  % cf. \cite{wang2025neural} on hierarchical uncertainty processing
   % NOTE (to develop): CogLink advances neural modeling of hierarchical, model-based/model-free
   % decision-making, but does not address *ill-defined problems* -- where no predefined script or
   % solution path applies. My Ch. 8 material frames this as a gap "vexing for schema theory"
@@ -221,11 +289,13 @@
   % Scratch space for ideas, anecdotes, and examples to develop or place elsewhere
   \footnotesize
   \begin{itemize}
-    \item \textbf{Oh no Waymo} --- % TODO: develop; candidate anecdote for the vision analogy
-      \\ \emph{possible example of imitation-without-understanding in the wild}
+    % "Oh no Waymo" promoted to a full frame in Section "Event Segmentation: A Basis for Experience".
+    % Retained here: the valuative/attentional follow-on not yet worked into that frame.
+    \item \textbf{Waymo, continued} --- % TODO: develop
+      \\ \emph{valuative processing and attention, beyond slow feature analysis}
 
       \vspace{0.5em}
-      Waymos and other AIs harnessed to bodies perform processing operations related to moving through the world with particular sets of prescribed motivations. There's lots to question about the notion of `motivations', which I hope to do in another forum. But focusing for now just on the problem of regulating a body moving in time through space, detecting environmental conditions is an ongoing, dynamic problem. At its core, it requires recognizing other agents and dynamic forces in the world. That is, slow feature analysis is a baseline for experiential processing \parencite{song2022slow}. It builds temporal parsing into experiencing. Slow feature analysis combines with valuative processing (salience and valence) that is itself dynamic and interactive. In terms of attention, a stabilization in valuation can be a catalyst of shifting attention, which marks temporal experience with subjective meaning.
+      Slow feature analysis combines with valuative processing (salience and valence) that is itself dynamic and interactive. In terms of attention, a stabilization in valuation can be a catalyst of shifting attention, which marks temporal experience with subjective meaning.
 
       \vspace{0.5em}
       \emph{Open questions:} Can an experiencing AI have a semblance of these processes? How might it relate to the question of whether the AI has subjective experience?

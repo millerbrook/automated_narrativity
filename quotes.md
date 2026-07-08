@@ -132,6 +132,44 @@ Bib key: `miller2023eventsweaknarrativity`. Pulled for the human-vs-LLM attentio
 - **★ Architecture angle:** that frame ends on an open question — could an explicit internal model *of the system's own attention* (not just attention weights) point toward AI architectures closer to awareness? This forward-links to Section "What Architecture Is Closer?" (the "Self-salience models" bullet), where a comment note now flags the connection.
 - Note: page numbers above are to the PDF I was given (`N&C6.pdf`), matching the typeset page numbers (124–130), not PDF page indices.
 
+### (d) Ch. 6 — Event segmentation and its link to narrativity (Sects. 6.3–6.7, pp. 126–144)
+
+Bib key: `miller2023eventsweaknarrativity`. Pulled for an event-segmentation intro and its explicit connection to narrative processing — candidate material for a slide/section on event segmentation itself, and for `article.tex` Sect. "Event parsing."
+
+**Definitions of "event" (intro material):**
+
+> "a segment of time at a given location that is perceived by an observer to have a beginning and an end" (Zacks and Tversky 2001, cited p. 128)
+
+> events "involve people in purposeful activities, and acting on objects and interacting with each other to achieve some result" (Nelson 2003, cited p. 128)
+
+**EST mechanism — the cleanest technical account of event segmentation itself:**
+
+> "One central proposal of the EST model is that event segmentation is a spontaneous outcome of ongoing perception and arises at points where perceptual predictions begin to fail or change... The period of epoch between two such consecutive changes current mental models is an event." (p. 135, quoting Zacks et al.)
+
+> "As an event proceeds, predictions are relatively accurate. However, as it ends, prediction error increases, causing a reset of the event model. When such a reset occurs, an event boundary is set." (p. 135)
+
+- **★ In use:** these three quotes are now in `article.tex`, Sect. "Event parsing: the challenges of recognition," ~line 100. The "segment of time..." definition and the EST mechanism quote are also now in `lisbon_presentation.tex`, new frame "Event Segmentation" (Section "Event Segmentation: A Basis for Experience"); the "As an event proceeds..." reset quote is in the following frame, "Prediction, Revisited."
+
+**Event segmentation ↔ narrativity, direct bridge:**
+
+> "As incoming information about the current event becomes less consistent with the current mental model, readers are more likely to update the current model to more accurately represent the state of the world... readers may explicitly perceive the points where characters, goals, and other elements change as event boundaries because these changes drive the updating of readers' mental models at those points." (Speer, Zacks, and Reynolds, quoted p. 136)
+
+> "this process of segmentation [used in detecting the structure of narrated activities] is part of a larger, modality-independent system involved in the comprehension of everyday activities" (p. 136)
+
+- Possible use: strongest evidence that event-segmentation research and narrative-comprehension research treat the same underlying mechanism — direct support for the talk's "Narrative in Cognition" section, which currently has only bare bullets.
+
+**Miller's own framing statement (working definition of narrative processing + explicit thesis link):**
+
+> "I'll highlight the emergence in event segmentation and episodic memory processes of dynamics fundamental to the definition of weak narrativity... Narrative processing is ongoing meaning-directed generation and processing of emergent temporal structures consisting of related value-dynamic sequences involving value-dynamic selected agents, mediated by socio-cultural contexts." (p. 124)
+
+**Synthesis/payoff (good for a closing or "so what" slide):**
+
+> "weak narrativity could exist in linkages between events, in the internal features of events, or in the processes that shape experience into events." (p. 144)
+
+**Counter-position worth including for contrast (Menary, bottom-up view):**
+
+> "It is not narratives that shape experiences but, rather, experiences that structure narratives... The mistake is again to suppose that a narrative conceived in abstraction could be brought to bear on a sequence of experiences, ordering them and giving them meaning." (p. 143)
+
 ## Other
 
 <!-- add candidate quotes here -->

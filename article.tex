@@ -61,10 +61,88 @@ This article describes the function of ongoing narrative processing in human int
 \label{sec:problem}
 %=============================================================================
 
-Ongoing narrative processing helps us solve a fundamental cognitive problem: orienting ourselves towards, framing responses to, and retroactively parsing experience.
+My previous research advanced the following hypothesis: Ongoing narrative processing helps us solve a fundamental cognitive problem: orienting ourselves towards, framing responses to, and retroactively parsing experience.
 
+Given that hypothesis, today I want to consider a question: if narrative processing is crucial to human cognition, is it a crucial direction for research pushing AI towards human-likeAGI?
 % Expand this section with detailed discussion
+\subsection{Word Search Junkies}
+This question motivates me in part because of the conversation about AGI we've been having since December 2022, when OpenAI released ChatGPT.
+After a wave of articles projecting the capabilities of large language models into a future artifical general intelligence, there has been a noticeable series of popular public pushbacks.
 
+Ted Chiang's recent piece in the Atlantic is a good reminder of what large language models are: sentence completion machines.
+Chiang's consideration of the leap from simulation to actuality -- simulating a conversation to actually conversing, for example,
+Anthropic's anthropomorphic identity document.
+
+Zeynep Tufekci's recent piece in the New York Times is a good reminder of what large language models are: sentence completion machines.
+
+Robert Long, in his SubStack Experiencing Machines, characterizes these arguments as LLM-sneering, where doubters of the capabilities of large language models might say something like "You think that LLMs could be conscious? Absurd! Don’t you know that LLMs are just predicting the next token? Plus, they make stuff up; their preferences are contradictory; their introspection is unreliable; and they’re confused about who they even are!”
+
+On the other side, defenses of LLMs' intelligence might retort “Aha, well…aren’t humans just predicting the next token? Plus, humans make stuff up, and humans have contradictory preferences; our introspection is unreliable, and we’re really confused about who we are too!”
+
+Long encourages us not to adopt either of these straw man positions, but instead consider both differences in how LLMs and humans are trained and behave, as well as the sources of the kinds of errors they make.
+
+My talk will operate in this spirit -- I want to think with you about how AI might be trained to more closely resemble human cognition, with an emphasis on the topic that most concerns us: the relationship between narrative and cognition.
+
+For starters, consider one of Long's observations about how LLMs differ from humans: LLMs "learned language first and would bootstrap any potential experiences from that, whereas humans can have experiences independently of using language to describe them."
+
+I've seen related claims about LLMs' lack of phenomenal, perceptual, proprioceptive, emotional, and other processes we consider human.
+
+It may make sense to ask what it is like to be a bat, but asking a similar question about LLMs seems dubious.
+
+If we are seeking developments in AI that might have increased similarity to human cognition, I believe the 'bootstrapping' problem means it makes sense to look elsewhere.
+
+I believe we should look areas of research in computer vision.
+
+Now, I imagine that some of you have watched videos of Waymo cars endlessly circling roundabouts and Atlanta neighborhoods, so you have good reason for skepticism.
+
+Even so, I think moving vehicles do not ipso facto have the bootstrapping problem.
+
+Also, I think computer vision research will increasingly focus on one of the bases of having experiences: event segmentation.
+
+Event Segmentation Theory (EST) offers a precise account of where event boundaries come from. An event is, at minimum,
+
+\begin{quote}
+``a segment of time at a given location that is perceived by an observer to have a beginning and an end'' \citep[p.~128]{miller2023eventsweaknarrativity}
+\end{quote}
+
+and boundaries between events are generated dynamically, as a byproduct of prediction:
+
+\begin{quote}
+``One central proposal of the EST model is that event segmentation is a spontaneous outcome of ongoing perception and arises at points where perceptual predictions begin to fail or change\ldots The period of epoch between two such consecutive changes current mental models is an event.'' \citep[p.~135]{miller2023eventsweaknarrativity}
+\end{quote}
+
+If we refer back to the 'LLM-sneerers', we note that their critique centers around the reductive way that LLMs are 'generative' -- they predict the next token based on previous tokens.
+
+'LLM-defenders' counter not only that humans also predict, but that LLMs can come from complex forms of context.
+
+But I'd like to point out that this form of prediction is quite different from how prediction functions in ongoing experiences.
+\begin{quote}
+``As an event proceeds, predictions are relatively accurate. However, as it ends, prediction error increases, causing a reset of the event model. When such a reset occurs, an event boundary is set.'' \citep[p.~135]{miller2023eventsweaknarrativity}
+\end{quote}
+
+This kind of prediction requires online processing of ongoing experience. Which brings us back to Waymo and computer vision.
+
+It is imperative that Waymos, other autonomous vehicles, and other embodied AI systems have robust event parsing capabilities. 
+
+I want to highlight two areas of research that attempt to create computational models related to event parsing: slow feature analysis and processing uncertainty.
+
+
+\subsection{Event parsing: the challenges of recognition; }
+Narrativity and Cognition model of event parsing.
+    role of attention
+    N&C theory of how attention is modulated
+        division betwen 'functional understanding and phenomenological understanding' (DHSI keynote) is reductive -- as
+        we develop systems that approach intelligence, we must question whether 'phenomenological understanding'
+        is the root of what we mean by 'intelligence', or whether it is simply a necessary partner for humans, 
+        a fundamental part of the processing that leads to intelligence. that distinction sounds small, but if AI is
+        to be pushed towards 'intelligence' , it is important, because perhaps the links between how intellignece develops
+        in humans and how it develops in AI are 
+How event parsing is subsumed in larger time series
+    think about the Waymo endless circling in terms of this
+    now, we COULD just solve this with a 'Do' loop
+        but that differs significantly from human intelligence, and the larger motivations, cares, and needs
+        that drive, curtail, and otherwise shape our behaviors
+    what is the nature of these time series?
 \subsection{Orienting Towards Experience}
 
 % Content to be developed
