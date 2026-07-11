@@ -129,11 +129,19 @@ I want to highlight two areas of research that attempt to create computational m
 Slow feature analysis (SFA) is a computational technique that identifies slowly varying features in time series data, which can be used to detect event boundaries. SFA has been applied in various domains, including computer vision and robotics, to improve the understanding of dynamic environments.
 
 According to \citet{song2022slow}, SFA extracts temporal features whose 'slow' organizing principle is consistent with the nature of biological vision \citep{song2022slow}"
-Types of SFA.
-
-What is Coglinks?
-
+Song et. al. describe several types of SFA, including online SFA, multi-modal SFA, and probabilistic SFA.
+Online SFA is particularly relevant for real-time event parsing, as it allows for continuous updating of the model as new data arrives. Multi-modal SFA can integrate information from different sensory modalities, enhancing the robustness of event detection. Probabilistic SFA incorporates likelihood distributions into the recognition of entities and agents, drawing on models of reality shaped by previous experiences.
+In pushing SFA towards providing a basis for human-like event parsing, researchers would likely need to combine or at least coordinate these approaches.
+Unsurprisingly, online SFA is already computationally expensive, so this integration is for now out of our reach.
 If online SFA in computer vision can continue to be refined to incorporate the strengths of probabilistic, multi-modal, and other forms of SFA, it might be employed in conjunction with salience systems to provide ongoing, continuously updating prediction failure processing and equilibrium-disequilibrium-tracking. These elements generate emergent event recognition.
+
+While SFA might provide a building block for human-like event parsing, computational models of how we make decisions might provide ways to leverage models derived from prior experiences in event parsing.
+
+Scientists studying decision making and reinforment learning have developed computational models that shed light on how prediction error figures into state apprehension and guides decison making. Thus, they focus on higher order functions that shape, top-down, the experience of events and navigation through them. Coglinks models the reinforcement learning processes that trigger switching between model-based and model-free processes for decision making, and subsequently, the processes that alter extant models or shape new models of unfamiliar states.
+
+The key mechanism in Coglinks is the use of prediction error to guide the switching between model-baesd and model-free processes. 
+As such, Coglinks begins to capture the dynamics of how prediction error and uncertainty shape the navigation of events, and how these processes might be modeled computationally.
+However, Coglinks does not model the processes that generate choices, nor does it model event parsing as a means of generating choices in familiar or novel contexts.
 
 In this context of ongoing emerging event cognition, computational approaches to uncertainty like Coglinks can be developed to transition from modeling uncertainty about well-defined choices to modeling the emergence of choices from the fuzzy, uncertain domain of predictive processing, of the navigation of choices marked by uncertainty, including ill-defined problems, and of learning from online decision navigation, taking the form of abstracting from event experiences.
 
