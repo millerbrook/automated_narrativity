@@ -170,6 +170,32 @@
     .reveal blockquote {
       border: none; background: none; box-shadow: none; width: 100%;
     }
+
+    .waymo-slide .video-row {
+  display: flex;
+  gap: 2%;
+  flex: 1;
+  align-items: center;
+  margin-top: 0.3em;
+}
+.waymo-slide figure {
+  flex: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.waymo-slide video {
+  width: 100%;
+  border-radius: 4px;
+  background: #000;
+}
+.waymo-slide figcaption {
+  font-size: 0.28em;
+  color: var(--muted);
+  margin-top: 0.5em;
+  text-align: center;
+}
   </style>
 </head>
 <body>
@@ -178,223 +204,176 @@
 
     <!-- 1 — Opening -->
     <section class="title-slide" data-background-color="#1C2E4A">
-      <p class="question">How does narrative figure into the drive towards artificial intelligences that bear comparison to human cognition?</p>
+      <p class="question">narrative and human-like ai</p>
       <div class="footer-label">Narrative Processing &amp; Artificial Intelligence</div>
       <aside class="notes">How does narrative figure into the drive towards artificial intelligences that bear comparison to human cognition?</aside>
     </section>
 
     <!-- 2 — Literature -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>What the Literature Already Does (and Misses)</h2>
-      <ul>
-        <li>Narrative computation: analysis of structures</li>
-        <li>LLMs: automated narrative generation</li>
-        <li>Both automate high-level cognitive activities</li>
-        <li>Neither resembles how humans actually process narrative</li>
-      </ul>
+      <p class="question">narrative analysis and generation</p>
       <aside class="notes">There is a robust literature about narrative computation, focusing on the analysis of narrative structures. Large language models can be leveraged to generate narratives. These two directions automate two high-level human cognitive activities. But neither process resembles how narrative structures are recognized and created in human thinking.</aside>
     </section>
 
-    <!-- 3 — What this talk does -->
+    <!-- 3 — Ongoing Narrative Processing -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>What This Talk Does</h2>
-      <ul>
-        <li>The function of ongoing narrative processing in human intelligence</li>
-        <li>The state of AI in approximating that functionality</li>
-      </ul>
+      <p class="question">how does ongoing narrative processing shape human cognition, and could ai approximate that functionality?</p>
       <aside class="notes">This talk describes the function of ongoing narrative processing in human intelligence, followed by consideration of the state of artificial intelligence in approximating that functionality.</aside>
     </section>
 
     <!-- 4 — Hypothesis -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>The Hypothesis</h2>
-      <ul>
-        <li>Ongoing narrative processing solves a fundamental cognitive problem</li>
-        <li>Orienting ourselves toward experience</li>
-        <li>Framing responses to experience</li>
-        <li>Retroactively parsing experience</li>
-      </ul>
+      <p class="question">orientating towards, framing, and parsing experience</p>
       <aside class="notes">My previous research advanced the following hypothesis: ongoing narrative processing helps us solve a fundamental cognitive problem — orienting ourselves towards, framing responses to, and retroactively parsing experience.</aside>
     </section>
 
     <!-- 5 — Today's question -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Today's Question</h2>
-      <ul>
-        <li>If narrative processing is crucial to human cognition…</li>
-        <li>Is it a crucial direction for research pushing AI toward human-like AGI?</li>
-      </ul>
+      <p class="question">is narrative processing crucial for human-like AI?</p>
       <aside class="notes">Given that hypothesis, today I want to consider: if narrative processing is crucial to human cognition, is it a crucial direction for research pushing AI towards human-like AGI?</aside>
     </section>
 
     <!-- 6 — December 2022 -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Context: December 2022</h2>
-      <ul>
-        <li>OpenAI releases ChatGPT</li>
-        <li>Wave of articles projecting LLM capabilities toward AGI</li>
-      </ul>
+      <p class="question">on or about December 2022...</p>
       <aside class="notes">This question motivates me in part because of the conversation about AGI we've been having since December 2022, when OpenAI released ChatGPT.</aside>
     </section>
 
     <!-- 7 — Wave and pushback -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>The Wave and the Pushback</h2>
-      <ul>
-        <li>Wave: articles projecting LLMs as path to AGI</li>
-        <li>Noticeable series of popular public pushbacks</li>
-      </ul>
+      <p class="question">"...LLMs changed* human character"</p>
+    </br></br></br></br></br></br></br></br>
+      <div class="footer-label">*or at least, they made us worry about it.</div>
       <aside class="notes">After a wave of articles projecting the capabilities of large language models into a future artificial general intelligence, there has been a noticeable series of popular public pushbacks.</aside>
     </section>
 
     <!-- 8 — Skeptics -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>The Skeptics</h2>
-      <ul>
-        <li>Ted Chiang — <em>The Atlantic</em></li>
-        <li>Zeynep Tufekci — <em>The New York Times</em></li>
-        <li>Shared diagnosis: LLMs are sentence completion machines</li>
-      </ul>
+      <p class="question">or maybe not.</p>
       <aside class="notes">Ted Chiang's recent piece in the Atlantic and Zeynep Tufekci's recent piece in the New York Times are both good reminders of what large language models are: sentence completion machines.</aside>
     </section>
 
     <!-- 9 — LLM-Sneerers -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>The LLM-Sneerers</h2>
-      <ul>
-        <li>"LLMs are just predicting the next token"</li>
-        <li>They make stuff up; preferences are contradictory</li>
-        <li>Introspection is unreliable; identity is confused</li>
-      </ul>
+      <p class="question">`llm-sneerers`</p>
       <aside class="notes">Robert Long, in his SubStack Experiencing Machines, characterizes one side of this debate as LLM-sneering. The sneerer's argument goes something like: "You think LLMs could be conscious? Absurd! Don't you know that LLMs are just predicting the next token? Plus, they make stuff up; their preferences are contradictory; their introspection is unreliable; and they're confused about who they even are!"</aside>
     </section>
 
     <!-- 10 — LLM-Defenders -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>The LLM-Defenders</h2>
-      <ul>
-        <li>"Aren't humans also predicting the next token?"</li>
-        <li>Humans also make stuff up</li>
-        <li>Our preferences are contradictory; our introspection is unreliable</li>
-        <li>We are confused about who we are, too</li>
-      </ul>
+      <p class="question">`llm-defenders`</p>
       <aside class="notes">On the other side, defenders of LLMs' intelligence might retort: "Aha, well — aren't humans just predicting the next token? Plus, humans make stuff up, and humans have contradictory preferences; our introspection is unreliable, and we're really confused about who we are too!"</aside>
     </section>
 
     <!-- 11 — Long's middle path -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Long's Middle Path</h2>
-      <ul>
-        <li>Don't adopt either straw man</li>
-        <li>Consider differences in training and behavior</li>
-        <li>Consider the sources of the kinds of errors they make</li>
-      </ul>
+      <p class="question">long's middle path</p>
       <aside class="notes">Long encourages us not to adopt either of these straw man positions, but instead consider both the differences in how LLMs and humans are trained and behave, as well as the sources of the kinds of errors they make.</aside>
     </section>
 
     <!-- 12 — This talk's spirit -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>This Talk's Spirit</h2>
-      <ul>
-        <li>How might AI be trained to more closely resemble human cognition?</li>
-        <li>Focus: the relationship between narrative and cognition</li>
-      </ul>
+        <p class="question">how might ai be trained to more closely resemble human cognition?</p>
       <aside class="notes">My talk will operate in that spirit. I want to think with you about how AI might be trained to more closely resemble human cognition, with an emphasis on the topic that most concerns us: the relationship between narrative and cognition.</aside>
     </section>
 
     <!-- 13 — Key observation from Long -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>A Key Observation from Long</h2>
-      <ul>
-        <li>LLMs learned language first</li>
-        <li>They bootstrap any potential experiences from language</li>
-        <li>Humans have experiences independently of language</li>
-      </ul>
+      <p>which comes first, experience or language about it?</p>
       <aside class="notes">Consider one of Long's observations about how LLMs differ from humans: LLMs "learned language first and would bootstrap any potential experiences from that, whereas humans can have experiences independently of using language to describe them."</aside>
     </section>
 
     <!-- 14 — Bootstrapping problem -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>The Bootstrapping Problem</h2>
-      <ul>
-        <li>LLMs lack phenomenal, perceptual, proprioceptive, and emotional processes</li>
-        <li>"What is it like to be a bat?" — not applicable to LLMs</li>
-      </ul>
-      <aside class="notes">I've seen related claims about LLMs' lack of phenomenal, perceptual, proprioceptive, emotional, and other processes we consider human. It may make sense to ask what it is like to be a bat — but asking a similar question about LLMs seems dubious.</aside>
+      <p class="question">bootstrapping experience?</p>
+      <aside class="notes">
+        <p>I've seen related claims about LLMs' lack of phenomenal, perceptual, proprioceptive, emotional, and other processes we consider human. It may make sense to ask what it is like to be a bat — but asking a similar question about LLMs seems dubious.</p>
+        <p><strong>Not for reading:</strong></p>
+        <p>Zahavi and Kriegel: "for-me-ness is not in the first instance an aspect of what is experienced but of how it is experienced; not an object of experience, but a constitutive manner of experiencing" (p. 38)</p>
+        <p>Christoff et al.: self-specifying tasks "can be expected to enhance the self-experience of being a cognitive–affective agent" (p. 109)</p>
+        <ul>
+          <li>cf. Thomas Metzinger's <em>Ego Tunnel</em></li>
+        </ul>
+      </aside>
     </section>
 
     <!-- 15 — Where to look instead -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Where to Look Instead</h2>
-      <ul>
-        <li>The bootstrapping problem means we should look elsewhere</li>
-        <li>Computer vision research</li>
-      </ul>
+      <p class="question">looking elsewhere: computer vision</p>
       <aside class="notes">If we are seeking developments in AI that might have increased similarity to human cognition, the bootstrapping problem means it makes sense to look elsewhere. I believe we should look at areas of research in computer vision.</aside>
     </section>
 
     <!-- 16 — Anticipating skepticism -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Anticipating Skepticism</h2>
-      <ul>
-        <li>Waymo cars endlessly circling roundabouts</li>
-        <li>Good reason for skepticism</li>
-      </ul>
-      <aside class="notes">I imagine some of you have watched videos of Waymo cars endlessly circling roundabouts and Atlanta neighborhoods, so you have good reason for skepticism.</aside>
-    </section>
+<section class="content-slide waymo-slide" data-background-color="#F8F9FC">
+  <h2>really?</h2>
+  <div class="video-row">
+    <figure>
+      <video src="video/waymo_honking.mp4" autoplay loop muted playsinline></video>
+      <figcaption>4am honking in a parking lot — SF, 2024</figcaption>
+    </figure>
+    <figure>
+      <video src="video/waymo_standoff.mp4" autoplay loop muted playsinline></video>
+      <figcaption>3-car standoff, North Beach — SF, 2024</figcaption>
+    </figure>
+  </div>
+  <aside class="notes">I imagine some of you have watched videos of Waymo cars endlessly circling roundabouts and Atlanta neighborhoods, so you have good reason for skepticism.</aside>
+</section>
 
     <!-- 17 — Why embodied AI is different -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Why Embodied AI Is Different</h2>
-      <ul>
-        <li>Moving vehicles do not <em>ipso facto</em> have the bootstrapping problem</li>
-        <li>Computer vision research → event segmentation</li>
-      </ul>
+      <p class="question">embodied ai and online experiences</p>
       <aside class="notes">Even so, moving vehicles do not ipso facto have the bootstrapping problem. And I think computer vision research will increasingly focus on one of the bases of having experiences: event segmentation.</aside>
     </section>
 
     <!-- 18 — What is an event? (quote) -->
     <section class="quote-slide" data-background-color="#F8F9FC">
-      <h2>What Is an Event?</h2>
+      <p class="question">events and event segmentation</p>
       <div class="quote-box">
-        <p class="quote-text">"a segment of time at a given location that is perceived by an observer to have a beginning and an end"</p>
-        <p class="attribution">— Miller (2023), Event Segmentation Theory</p>
+        <p class="quote-text">"a fundamental unit of experience"</p>
+        <p class="attribution">— Shipley (2008)</p>
       </div>
-      <aside class="notes">Event Segmentation Theory (EST) offers a precise account of where event boundaries come from. An event is, at minimum, "a segment of time at a given location that is perceived by an observer to have a beginning and an end."</aside>
+      <aside class="notes">Thomas Shipley puts it simply: events "appear to be a fundamental unit of experience." Events aren't just an analytic convenience for describing perception after the fact — they're experienced in the temporal present, and then refined and repurposed in episodic memory. Event Segmentation Theory (EST) offers a precise account of where event boundaries come from. Jeffrey Zacks and Barbara Tversky define an event, at minimum, as "a segment of time at a given location that is perceived by an observer to have a beginning and an end."</aside>
     </section>
 
-    <!-- 19 — How event boundaries are generated (quote) -->
+    <!-- 20 — How event boundaries are generated (quote) -->
     <section class="quote-slide" data-background-color="#F8F9FC">
-      <h2>How Event Boundaries Are Generated</h2>
+      <h2>how event boundaries are generated</h2>
       <div class="quote-box">
         <p class="quote-text">"Event segmentation is a spontaneous outcome of ongoing perception and arises at points where perceptual predictions begin to fail or change… The period between two such consecutive changes in current mental models is an event."</p>
-        <p class="attribution">— Miller (2023)</p>
+        <p class="attribution">— Shipley &amp; Zacks (2008)</p>
       </div>
       <aside class="notes">Boundaries between events are generated dynamically, as a byproduct of prediction: "One central proposal of the EST model is that event segmentation is a spontaneous outcome of ongoing perception and arises at points where perceptual predictions begin to fail or change. The period of epoch between two such consecutive changes in current mental models is an event."</aside>
     </section>
 
-    <!-- 20 — LLM prediction vs. ongoing prediction -->
+    <!-- 21 — Experience structures narrative (quote) -->
+    <section class="quote-slide" data-background-color="#F8F9FC">
+      <p class="question">experience and narrative</p>
+      <div class="quote-box">
+        <p class="quote-text">"It is not narratives that shape experiences but, rather, experiences that structure narratives... The mistake is again to suppose that a narrative conceived in abstraction could be brought to bear on a sequence of experiences, ordering them and giving them meaning."</p>
+        <p class="attribution">— Menary (2008)</p>
+      </div>
+      <aside class="notes">Richard Menary's bottom-up view: narrative doesn't get imposed on experience from outside. The temporal ordering is already there, in lived, embodied experience — narrative draws on that structure rather than authoring it.</aside>
+    </section>
+
+    <!-- 22 — Event segmentation as narrative substrate (quote) -->
+    <section class="quote-slide" data-background-color="#F8F9FC">
+      <p class="question">event segmentation</h2>
+      <aside class="notes">This is where Menary's bottom-up claim gets its mechanism. Event segmentation and episodic memory aren't just consistent with narrative processing happening bottom-up — they're where it happens: the ongoing, in-the-moment generation of these value-dynamic temporal structures is the narrative processing Menary says experience must supply.</aside>
+    </section>
+
+    <!-- 23 — LLM prediction vs. ongoing prediction -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>LLM Prediction vs. Ongoing Prediction</h2>
-      <ul>
-        <li>LLM-sneerers: LLMs predict the next token</li>
-        <li>LLM-defenders: humans also predict from complex context</li>
-        <li>But: token prediction ≠ prediction in ongoing experience</li>
-      </ul>
+      <p class="question">kinds of predictions</p>
       <aside class="notes">Recall the LLM-sneerers: their critique centers on the reductive way that LLMs are generative — they predict the next token based on previous tokens. Defenders counter that humans also predict, and that LLMs can draw on complex forms of context. But this form of prediction is quite different from how prediction functions in ongoing experience.</aside>
     </section>
 
-    <!-- 21 — Prediction error and event boundary (quote) -->
+    <!-- 24 — Prediction error and event boundary (quote) -->
     <section class="quote-slide" data-background-color="#F8F9FC">
-      <h2>Prediction Error and the Event Boundary</h2>
-      <div class="quote-box">
-        <p class="quote-text">"As an event proceeds, predictions are relatively accurate. However, as it ends, prediction error increases, causing a reset of the event model. When such a reset occurs, an event boundary is set."</p>
-        <p class="attribution">— Miller (2023)</p>
-      </div>
+      <p class="question">prediction error and event boundaries</p>
       <aside class="notes">"As an event proceeds, predictions are relatively accurate. However, as it ends, prediction error increases, causing a reset of the event model. When such a reset occurs, an event boundary is set."</aside>
     </section>
 
-    <!-- 22 — Requires online processing -->
+    <!-- 25 — Requires online processing -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>This Requires Online Processing</h2>
       <ul>
@@ -404,7 +383,7 @@
       <aside class="notes">This kind of prediction requires online processing of ongoing experience. Which brings us back to Waymo and computer vision.</aside>
     </section>
 
-    <!-- 23 — Imperative for embodied AI -->
+    <!-- 26 — Imperative for embodied AI -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>The Imperative for Embodied AI</h2>
       <ul>
@@ -414,7 +393,7 @@
       <aside class="notes">It is imperative that Waymos, other autonomous vehicles, and other embodied AI systems have robust event parsing capabilities.</aside>
     </section>
 
-    <!-- 24 — Two research areas -->
+    <!-- 27 — Two research areas -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>Two Research Areas</h2>
       <ul>
@@ -424,7 +403,7 @@
       <aside class="notes">I want to highlight two areas of research that attempt to create computational models related to event parsing: slow feature analysis and processing uncertainty.</aside>
     </section>
 
-    <!-- 25 — What is SFA? -->
+    <!-- 28 — What is SFA? -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>What Is Slow Feature Analysis?</h2>
       <ul>
@@ -435,7 +414,7 @@
       <aside class="notes">Slow Feature Analysis (SFA) is a computational technique that identifies slowly varying features in time series data, which can be used to detect event boundaries. SFA has been applied in computer vision and robotics to improve the understanding of dynamic environments.</aside>
     </section>
 
-    <!-- 26 — SFA and biological vision -->
+    <!-- 29 — SFA and biological vision -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>SFA and Biological Vision</h2>
       <ul>
@@ -446,7 +425,7 @@
       <aside class="notes">According to Song et al., SFA extracts temporal features whose "slow" organizing principle is consistent with the nature of biological vision.</aside>
     </section>
 
-    <!-- 27 — Types of SFA -->
+    <!-- 30 — Types of SFA -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>Types of SFA</h2>
       <ul>
@@ -457,7 +436,7 @@
       <aside class="notes">Song et al. describe several types: online SFA, multi-modal SFA, and probabilistic SFA.</aside>
     </section>
 
-    <!-- 28 — Online SFA -->
+    <!-- 31 — Online SFA -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>Online SFA</h2>
       <ul>
@@ -467,7 +446,7 @@
       <aside class="notes">Online SFA is particularly relevant for real-time event parsing, as it allows for continuous updating of the model as new data arrives.</aside>
     </section>
 
-    <!-- 29 — Multi-modal and probabilistic SFA -->
+    <!-- 32 — Multi-modal and probabilistic SFA -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>Multi-modal and Probabilistic SFA</h2>
       <ul>
@@ -477,7 +456,7 @@
       <aside class="notes">Multi-modal SFA integrates information from different sensory modalities, enhancing the robustness of event detection. Probabilistic SFA incorporates likelihood distributions into the recognition of entities and agents, drawing on models of reality shaped by previous experiences.</aside>
     </section>
 
-    <!-- 30 — Integration challenge -->
+    <!-- 33 — Integration challenge -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>The Integration Challenge</h2>
       <ul>
@@ -488,7 +467,7 @@
       <aside class="notes">Pushing SFA toward human-like event parsing would likely require combining or coordinating these approaches. Unsurprisingly, online SFA is already computationally expensive, so this integration is for now out of our reach.</aside>
     </section>
 
-    <!-- 31 — SFA's potential -->
+    <!-- 34 — SFA's potential -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>SFA's Potential</h2>
       <ul>
@@ -500,7 +479,7 @@
       <aside class="notes">If online SFA in computer vision can be refined to incorporate the strengths of probabilistic, multi-modal, and other forms of SFA, it might be employed in conjunction with salience systems to provide ongoing, continuously updating prediction-failure processing and equilibrium-disequilibrium tracking — elements that generate emergent event recognition.</aside>
     </section>
 
-    <!-- 32 — Computational models of decision making -->
+    <!-- 35 — Computational models of decision making -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>Computational Models of Decision Making</h2>
       <ul>
@@ -511,7 +490,7 @@
       <aside class="notes">While SFA might provide a building block for human-like event parsing, computational models of how we make decisions might provide ways to leverage models derived from prior experiences in event parsing. Scientists studying decision making and reinforcement learning have developed models that shed light on how prediction error figures into state apprehension and guides decision making.</aside>
     </section>
 
-    <!-- 33 — Coglinks -->
+    <!-- 36 — Coglinks -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>Coglinks</h2>
       <ul>
@@ -522,7 +501,7 @@
       <aside class="notes">Coglinks models the reinforcement learning processes that trigger switching between model-based and model-free processes for decision making, and subsequently, the processes that alter existing models or shape new models of unfamiliar states.</aside>
     </section>
 
-    <!-- 34 — Coglinks' key mechanism -->
+    <!-- 37 — Coglinks' key mechanism -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>Coglinks' Key Mechanism</h2>
       <ul>
@@ -533,7 +512,7 @@
       <aside class="notes">The key mechanism in Coglinks is the use of prediction error to guide the switching between model-based and model-free processes. As such, Coglinks begins to capture the dynamics of how prediction error and uncertainty shape the navigation of events, and how these processes might be modeled computationally.</aside>
     </section>
 
-    <!-- 35 — Coglinks' limitations -->
+    <!-- 38 — Coglinks' limitations -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>Coglinks' Limitations</h2>
       <ul>
@@ -544,7 +523,7 @@
       <aside class="notes">However, Coglinks does not model the processes that generate choices, nor does it model event parsing as a means of generating choices in familiar or novel contexts.</aside>
     </section>
 
-    <!-- 36 — From well-defined to fuzzy choices -->
+    <!-- 39 — From well-defined to fuzzy choices -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>From Well-Defined to Fuzzy Choices</h2>
       <ul>
@@ -556,7 +535,7 @@
       <aside class="notes">Computational approaches to uncertainty like Coglinks can be developed to transition from modeling uncertainty about well-defined choices to modeling the emergence of choices from the fuzzy, uncertain domain of predictive processing — including ill-defined problems, and learning from online decision navigation in the form of abstracting from event experiences.</aside>
     </section>
 
-    <!-- 37 — Narrative and active inference (quote) -->
+    <!-- 40 — Narrative and active inference (quote) -->
     <section class="quote-slide" data-background-color="#F8F9FC">
       <h2>Narrative and Active Inference</h2>
       <div class="quote-box">
@@ -566,7 +545,7 @@
       <aside class="notes">Bouizegarene et al. (2025) ascribe ongoing narrative construction a crucial role in refining cognitive models: "Narratives are particularly useful for active inference because they can contribute to both the conservative processes that maintain old memories and use them as models for new events, as well as generating new models through their recombination or projection to produce new stories."</aside>
     </section>
 
-    <!-- 38 — What we need next -->
+    <!-- 41 — What we need next -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>What We Need Next</h2>
       <ul>
@@ -577,7 +556,7 @@
       <aside class="notes">To move toward computationally simulating ongoing narrative processing as a form of active inference, we need to delve into the nature of the valuation systems that support emergent event processing in human cognition — and ask whether they can be modeled computationally.</aside>
     </section>
 
-    <!-- 39 — Emotional systems and weak narrativity -->
+    <!-- 42 — Emotional systems and weak narrativity -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>Emotional Systems and Weak Narrativity</h2>
       <ul>
@@ -589,7 +568,7 @@
       <aside class="notes">In my previous work, I ascribed significance to the emotional processes that support event cognition: emotional systems support ongoing, dynamic valuations of salience and valence. In the function of these systems in modulating the equilibrium-disequilibrium and prediction-failure patterns of event processing, I see what I call weak narrativity.</aside>
     </section>
 
-    <!-- 40 — The design question -->
+    <!-- 43 — The design question -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>The Design Question</h2>
       <ul>
@@ -599,7 +578,7 @@
       <aside class="notes">How can ongoing valuation systems be designed so that event cognition leverages valuation dynamism? That is, how can events be perceptually emergent?</aside>
     </section>
 
-    <!-- 41 — Attention architecture -->
+    <!-- 44 — Attention architecture -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>Attention Architecture</h2>
       <ul>
@@ -610,7 +589,7 @@
       <aside class="notes">This leads to the second major topic: perceptually emergent events must depend, in part, on a dynamic, systemic attention architecture — specifically, the relationship between attention and prediction failure, and between attention and the awareness model.</aside>
     </section>
 
-    <!-- 42 — Future directions -->
+    <!-- 45 — Future directions -->
     <section class="content-slide" data-background-color="#F8F9FC">
       <h2>Future Directions: Memory and Abstraction</h2>
       <ul>
@@ -619,6 +598,55 @@
         <li>Episodic → semantic memory</li>
       </ul>
       <aside class="notes">These are topics for future consideration. They lead, subsequently, to questions about how to model human-like learning and abstraction: how are event segments shaped by memory of previous events, and how do salient, valent events get abstracted into general knowledge — as human cognition does with its ongoing processing of episodic into semantic memory?</aside>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- APPENDIX / NOT PRESENTED — topic slides with quote dumps in    -->
+    <!-- presenter notes, for reference while drafting; not part of    -->
+    <!-- the live talk.                                                -->
+    <!-- ============================================================= -->
+
+    <!-- A1 — Attention and Awareness (topic) -->
+    <section class="title-slide" data-background-color="#1C2E4A">
+      <p class="question">Attention and Awareness</p>
+      <aside class="notes">
+        <p>"Attention is fundamental to time experiences. It is simultaneously responsive to environmental conditions and subject to intentional control." (Miller 2023, p. 124)</p>
+        <p>Webb and Graziano's Attention Schema Theory holds that "top–down versus bottom–up distinction[s] in attention research…[are] flawed…because some effects do not fall neatly into either category" (Webb &amp; Graziano 2015, p. 4)</p>
+        <p>"Awareness is dynamic and selective but continuous: 'awareness is an internal model of attention useful for the control of attention' (p. 5). This internal model creates a sense of 'subjective awareness. A creature with an attention schema should be a creature that concludes it is aware' (p. 6)." (Miller 2023, p. 124)</p>
+        <p>Webb and Graziano describe the observing perspective produced by our attention schema as "an amorphous, nonphysical, internal power, an ability to know, to experience, and to respond, a roving mental focus—the essence of covert attention without the underpinning details" (Webb &amp; Graziano 2015, p. 43)</p>
+        <p>"The awareness model, then, comprises a selection from the attentional field that reflects particular priorities. The model provides subjective continuity to our experiences. How these selections are made and coordinated in dynamic, unfolding time, and how they are formulated into units that we can recall and ultimately use to guide our future attention shapes event construction." (Miller 2023, p. 125)</p>
+      </aside>
+    </section>
+
+    <!-- A2 — Gists (topic) -->
+    <section class="title-slide" data-background-color="#1C2E4A">
+      <p class="question">gists</p>
+      <aside class="notes">
+        <p>Gists are "high-level story elements that are central and critical to the overall plot"; they "contain multiple units and their interrelationships," and "refer to a specific event...not based on multiple episodes" (Ghosh and Gilboa, citing Moscovitch, p. 110)</p>
+        <p>"Gists are complexes of valuative elements—rather than simple unvalued particulars—with deep links to the outcome structures of narratives, and which are refined via (and which in turn contribute to) schemas or connectionist networks. More simply put, particulars from our experiences have emergent meanings that shape our general understanding while aligning our memories into flexible narrative patterns." (Miller 2023, Ch. 8, p. 212–213)</p>
+        <p>"Gists appear to be vital to another function which is vexing for schema theory: processing ill-defined problems via scenario simulation. In 'ill-defined problems,' there is 'no specific script or solution path that can be applied' (Sheldon et al. 2011, p. 2). For ill-defined, or 'open-ended' problems, because there's no solution to store semantically, 'it [is] likely that solutions to such problems…rely on an event simulation strategy'" (Miller 2023, Ch. 8, p. 211)</p>
+        <p>This may be related to the theory of thalamic function in Coglinks.</p>
+        <p>"The convergence of inputs onto the thalamus and its diverse modulation of cortical and BG circuits position it ideally as a locus of plasticity for learning contextual states in model-based learning to coordinate between model-free and model-based systems." (Wang, Lynch, and Halassa 2025)</p>
+      </aside>
+    </section>
+
+    <!-- A3 — Simulation (topic) -->
+    <section class="title-slide" data-background-color="#1C2E4A">
+      <p class="question">simulation</p>
+      <aside class="notes">
+        <p>Sheldon and colleagues cite findings that episodic memory is used to imagine future events to hypothesize that episodic memory processes are implicated in solving ill-defined problems, particularly because of the flexibility and "relational binding" capabilities of episodic memory. The mechanisms that initiate and perform these simulations are speculative but might include analogical processing at the beginning to identify similar problems from the past, the associated solutions to which would provide material from which solution simulations might be built. (Miller 2023, Ch. 8, p. 211–212)</p>
+        <p>Beatty, Morgan, and Wise emphasize that narrative simulations of "counterfactual" events and structured around outcomes help reveal the contingency (and therefore meaning) of actual events. Additionally, problem-solving via simulation works by creating a phenomenology of feeling associated with particular scenarios, allowing to "pre-feel" possible experiences (Schacter et al. 2015). (Miller 2023, Ch. 8, p. 212)</p>
+        <p>"Event simulation requires that subjects conceive of an outcome derived from beginning and ending value conditions of selected actors... the processing of their dynamism and relationality... requires a capacity for complex time-extended imagining: the ability to coordinate multiple agents and contextual factors into a meaningful sequence, resulting in an event (or chain of events)." (Miller 2023, Ch. 8, p. 212)</p>
+      </aside>
+    </section>
+
+    <!-- A4 — Higher order narrative processing (topic) -->
+    <section class="title-slide" data-background-color="#1C2E4A">
+      <p class="question">higher order narrative processing</p>
+      <aside class="notes">
+        <p>"We propose that the involvement of identity narratives in individual active inference involves two processes. First, identity narratives lead to the creation and conservation of global coherence among representations in a process that can be seen as a form of active inference about the person in their local world. Second, identity narratives allow the integration of new possibilities to eventually restore a renewed sense of self-continuity and familiarity, to restore a coherent set of expectations and integrate environmental or situational changes." (Bouizegarene et al. 2024)</p>
+        <p>"In a nutshell, we contend that certain narratives 'become' master narratives because they serve an important function for the group. Specifically, master narratives serve to synchronize the predictions that group members generate for their own and others' future states, behaviors, and relationships. The fact that most group members tend to adopt the same narrative models of each other's behavior and life course (or identity) makes it easier to predict the behavior and life course of oneself and each other. When members of a culture share the same master narratives, they share a set of predictions implicitly included by this narrative; how they collectively think that events and life periods are supposed to unfold. Our model suggests that master narratives may be understood as being put in place and maintained because of their role in the synchronization of predictions in the group." (Bouizegarene et al. 2024)</p>
+      </aside>
     </section>
 
   </div><!-- /.slides -->
