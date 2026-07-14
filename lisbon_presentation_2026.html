@@ -125,7 +125,8 @@
       text-transform: none;
       letter-spacing: 0;
     }
-    .quote-slide .quote-box {
+    .quote-slide .quote-box,
+    .title-slide .quote-box {
       background: var(--quote-bg);
       border-radius: 6px;
       flex: 1;
@@ -135,20 +136,67 @@
       padding: 2em 2.8em;
       box-sizing: border-box;
     }
-    .quote-slide .quote-text {
-      font-size: 0.47em;
+    .quote-slide .quote-text,
+    .title-slide .quote-text {
+      font-size: 0.85em;
       font-style: italic;
       color: var(--navy);
       text-align: center;
       line-height: 1.78;
       margin: 0;
     }
-    .quote-slide .attribution {
+    .quote-slide .attribution,
+    .title-slide .attribution {
       font-size: 0.35em;
       color: var(--muted);
       text-align: right;
       margin-top: 1.4em;
       font-style: normal;
+    }
+    .title-slide .quote-box {
+      width: 100%;
+      max-width: 90%;
+      flex: 0 0 auto;
+      margin-top: 1.2em;
+    }
+
+    /* ── EVENT-SEQUENCE NAV (slides 18–23) ───────────────── */
+    .sequence-slide {
+      flex-direction: row !important;
+      align-items: stretch;
+    }
+    .sequence-slide .seq-nav {
+      flex: 0 0 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.5em;
+      margin-right: 2.4em;
+      padding-right: 1.8em;
+      border-right: 1px solid rgba(28, 46, 74, 0.12);
+    }
+    .sequence-slide .seq-item {
+      font-size: 1em;
+      line-height: 1.32;
+      color: var(--navy);
+      opacity: 0.3;
+      padding-left: 0.9em;
+      border-left: 2px solid transparent;
+      transition: opacity 0.2s ease, border-color 0.2s ease;
+    }
+    .sequence-slide .seq-item.active {
+      opacity: 1;
+      border-left-color: var(--navy);
+    }
+    .sequence-slide .seq-main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 0;
+    }
+    .sequence-slide .seq-main .quote-box {
+      margin: 0;
     }
 
     /* ── Reveal UI chrome ──────────────────────────────── */
@@ -194,6 +242,21 @@
   font-size: 0.28em;
   color: var(--muted);
   margin-top: 0.5em;
+  text-align: center;
+}
+
+.content-slide .slide-figure {
+  max-width: 85%;
+  max-height: 62vh;
+  margin: 0.7em auto 0;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(28, 46, 74, 0.18);
+}
+.content-slide .slide-figure-caption {
+  font-size: 0.28em;
+  color: var(--muted);
+  margin: 0.5em auto 0;
   text-align: center;
 }
   </style>
@@ -326,277 +389,212 @@
     </section>
 
     <!-- 18 — What is an event? (quote) -->
-    <section class="quote-slide" data-background-color="#F8F9FC">
-      <p class="question">events and event segmentation</p>
-      <div class="quote-box">
-        <p class="quote-text">"a fundamental unit of experience"</p>
-        <p class="attribution">— Shipley (2008)</p>
+    <section class="quote-slide sequence-slide" data-background-color="#F8F9FC">
+      <nav class="seq-nav">
+        <span class="seq-item active">events</span>
+        <span class="seq-item">event boundaries</span>
+        <span class="seq-item">experience &amp; narrative</span>
+        <span class="seq-item">event segmentation</span>
+        <span class="seq-item">kinds of prediction</span>
+        <span class="seq-item">prediction error</span>
+      </nav>
+      <div class="seq-main">
+        <div class="quote-box">
+          <p class="quote-text">"a fundamental unit of experience"</p>
+          <p class="attribution">— Shipley (2008)</p>
+        </div>
       </div>
       <aside class="notes">Thomas Shipley puts it simply: events "appear to be a fundamental unit of experience." Events aren't just an analytic convenience for describing perception after the fact — they're experienced in the temporal present, and then refined and repurposed in episodic memory. Event Segmentation Theory (EST) offers a precise account of where event boundaries come from. Jeffrey Zacks and Barbara Tversky define an event, at minimum, as "a segment of time at a given location that is perceived by an observer to have a beginning and an end."</aside>
     </section>
 
-    <!-- 20 — How event boundaries are generated (quote) -->
-    <section class="quote-slide" data-background-color="#F8F9FC">
-      <h2>how event boundaries are generated</h2>
-      <div class="quote-box">
-        <p class="quote-text">"Event segmentation is a spontaneous outcome of ongoing perception and arises at points where perceptual predictions begin to fail or change… The period between two such consecutive changes in current mental models is an event."</p>
-        <p class="attribution">— Shipley &amp; Zacks (2008)</p>
+    <!-- 19 — How event boundaries are generated (quote) -->
+    <section class="quote-slide sequence-slide" data-background-color="#F8F9FC">
+      <nav class="seq-nav">
+        <span class="seq-item">events</span>
+        <span class="seq-item active">event boundaries</span>
+        <span class="seq-item">experience &amp; narrative</span>
+        <span class="seq-item">event segmentation</span>
+        <span class="seq-item">kinds of prediction</span>
+        <span class="seq-item">prediction error</span>
+      </nav>
+      <div class="seq-main">
+        <div class="quote-box">
+          <p class="quote-text">"Event segmentation is a spontaneous outcome of ongoing perception and arises at points where perceptual predictions begin to fail or change… The period between two such consecutive changes in current mental models is an event."</p>
+          <p class="attribution">— Shipley &amp; Zacks (2008)</p>
+        </div>
       </div>
       <aside class="notes">Boundaries between events are generated dynamically, as a byproduct of prediction: "One central proposal of the EST model is that event segmentation is a spontaneous outcome of ongoing perception and arises at points where perceptual predictions begin to fail or change. The period of epoch between two such consecutive changes in current mental models is an event."</aside>
     </section>
 
-    <!-- 21 — Experience structures narrative (quote) -->
-    <section class="quote-slide" data-background-color="#F8F9FC">
-      <p class="question">experience and narrative</p>
-      <div class="quote-box">
-        <p class="quote-text">"It is not narratives that shape experiences but, rather, experiences that structure narratives... The mistake is again to suppose that a narrative conceived in abstraction could be brought to bear on a sequence of experiences, ordering them and giving them meaning."</p>
-        <p class="attribution">— Menary (2008)</p>
+    <!-- 20 — Experience structures narrative (quote) -->
+    <section class="quote-slide sequence-slide" data-background-color="#F8F9FC">
+      <nav class="seq-nav">
+        <span class="seq-item">events</span>
+        <span class="seq-item">event boundaries</span>
+        <span class="seq-item active">experience &amp; narrative</span>
+        <span class="seq-item">event segmentation</span>
+        <span class="seq-item">kinds of prediction</span>
+        <span class="seq-item">prediction error</span>
+      </nav>
+      <div class="seq-main">
+        <div class="quote-box">
+          <p class="quote-text">"It is not narratives that shape experiences but, rather, experiences that structure narratives... The mistake is again to suppose that a narrative conceived in abstraction could be brought to bear on a sequence of experiences, ordering them and giving them meaning."</p>
+          <p class="attribution">— Menary (2008)</p>
+        </div>
       </div>
       <aside class="notes">Richard Menary's bottom-up view: narrative doesn't get imposed on experience from outside. The temporal ordering is already there, in lived, embodied experience — narrative draws on that structure rather than authoring it.</aside>
     </section>
 
-    <!-- 22 — Event segmentation as narrative substrate (quote) -->
-    <section class="quote-slide" data-background-color="#F8F9FC">
-      <p class="question">event segmentation</h2>
+    <!-- 21 — Event segmentation as narrative substrate (quote) -->
+    <section class="quote-slide sequence-slide" data-background-color="#F8F9FC">
+      <nav class="seq-nav">
+        <span class="seq-item">events</span>
+        <span class="seq-item">event boundaries</span>
+        <span class="seq-item">experience &amp; narrative</span>
+        <span class="seq-item active">event segmentation</span>
+        <span class="seq-item">kinds of prediction</span>
+        <span class="seq-item">prediction error</span>
+      </nav>
       <aside class="notes">This is where Menary's bottom-up claim gets its mechanism. Event segmentation and episodic memory aren't just consistent with narrative processing happening bottom-up — they're where it happens: the ongoing, in-the-moment generation of these value-dynamic temporal structures is the narrative processing Menary says experience must supply.</aside>
     </section>
 
-    <!-- 23 — LLM prediction vs. ongoing prediction -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <p class="question">kinds of predictions</p>
+    <!-- 22 — LLM prediction vs. ongoing prediction -->
+    <section class="content-slide sequence-slide" data-background-color="#F8F9FC">
+      <nav class="seq-nav">
+        <span class="seq-item">events</span>
+        <span class="seq-item">event boundaries</span>
+        <span class="seq-item">experience &amp; narrative</span>
+        <span class="seq-item">event segmentation</span>
+        <span class="seq-item active">kinds of prediction</span>
+        <span class="seq-item">prediction error</span>
+      </nav>
       <aside class="notes">Recall the LLM-sneerers: their critique centers on the reductive way that LLMs are generative — they predict the next token based on previous tokens. Defenders counter that humans also predict, and that LLMs can draw on complex forms of context. But this form of prediction is quite different from how prediction functions in ongoing experience.</aside>
     </section>
 
-    <!-- 24 — Prediction error and event boundary (quote) -->
-    <section class="quote-slide" data-background-color="#F8F9FC">
-      <p class="question">prediction error and event boundaries</p>
-      <aside class="notes">"As an event proceeds, predictions are relatively accurate. However, as it ends, prediction error increases, causing a reset of the event model. When such a reset occurs, an event boundary is set."</aside>
+    <!-- 23 — Prediction error and event boundary (quote) -->
+    <section class="quote-slide sequence-slide" data-background-color="#F8F9FC">
+      <nav class="seq-nav">
+        <span class="seq-item">events</span>
+        <span class="seq-item">event boundaries</span>
+        <span class="seq-item">experience &amp; narrative</span>
+        <span class="seq-item">event segmentation</span>
+        <span class="seq-item">kinds of prediction</span>
+        <span class="seq-item active">prediction error</span>
+      </nav>
+      <aside class="notes">"As an event proceeds, predictions are relatively accurate. However, as it ends, prediction error increases, causing a reset of the event model. When such a reset occurs, an event boundary is set." This kind of prediction requires online processing of ongoing experience. Which brings us back to Waymo and computer vision.It is imperative that Waymos, other autonomous vehicles, and other embodied AI systems have robust event parsing capabilities.</aside>
     </section>
 
-    <!-- 25 — Requires online processing -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>This Requires Online Processing</h2>
-      <ul>
-        <li>Prediction error in ongoing experience requires online processing</li>
-        <li>Which brings us back to Waymo and computer vision</li>
-      </ul>
-      <aside class="notes">This kind of prediction requires online processing of ongoing experience. Which brings us back to Waymo and computer vision.</aside>
-    </section>
-
-    <!-- 26 — Imperative for embodied AI -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>The Imperative for Embodied AI</h2>
-      <ul>
-        <li>Autonomous vehicles must have robust event parsing capabilities</li>
-        <li>So must all embodied AI systems</li>
-      </ul>
-      <aside class="notes">It is imperative that Waymos, other autonomous vehicles, and other embodied AI systems have robust event parsing capabilities.</aside>
-    </section>
-
-    <!-- 27 — Two research areas -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Two Research Areas</h2>
-      <ul>
-        <li>Slow Feature Analysis (SFA)</li>
-        <li>Processing uncertainty</li>
-      </ul>
-      <aside class="notes">I want to highlight two areas of research that attempt to create computational models related to event parsing: slow feature analysis and processing uncertainty.</aside>
-    </section>
-
-    <!-- 28 — What is SFA? -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>What Is Slow Feature Analysis?</h2>
-      <ul>
-        <li>Identifies slowly varying features in time series data</li>
-        <li>Can be used to detect event boundaries</li>
-        <li>Applied in computer vision and robotics</li>
-      </ul>
-      <aside class="notes">Slow Feature Analysis (SFA) is a computational technique that identifies slowly varying features in time series data, which can be used to detect event boundaries. SFA has been applied in computer vision and robotics to improve the understanding of dynamic environments.</aside>
-    </section>
-
-    <!-- 29 — SFA and biological vision -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>SFA and Biological Vision</h2>
-      <ul>
-        <li>SFA extracts temporal features</li>
-        <li>"Slow" organizing principle consistent with biological vision</li>
-        <li>Song et al. (2022)</li>
-      </ul>
-      <aside class="notes">According to Song et al., SFA extracts temporal features whose "slow" organizing principle is consistent with the nature of biological vision.</aside>
-    </section>
-
-    <!-- 30 — Types of SFA -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Types of SFA</h2>
-      <ul>
-        <li>Online SFA</li>
-        <li>Multi-modal SFA</li>
-        <li>Probabilistic SFA</li>
-      </ul>
-      <aside class="notes">Song et al. describe several types: online SFA, multi-modal SFA, and probabilistic SFA.</aside>
-    </section>
-
-    <!-- 31 — Online SFA -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Online SFA</h2>
-      <ul>
-        <li>Continuous updating of the model as new data arrives</li>
-        <li>Particularly relevant for real-time event parsing</li>
-      </ul>
-      <aside class="notes">Online SFA is particularly relevant for real-time event parsing, as it allows for continuous updating of the model as new data arrives.</aside>
-    </section>
-
-    <!-- 32 — Multi-modal and probabilistic SFA -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Multi-modal and Probabilistic SFA</h2>
-      <ul>
-        <li>Multi-modal: integrates information from multiple sensory modalities</li>
-        <li>Probabilistic: incorporates likelihood distributions from prior experiences</li>
-      </ul>
-      <aside class="notes">Multi-modal SFA integrates information from different sensory modalities, enhancing the robustness of event detection. Probabilistic SFA incorporates likelihood distributions into the recognition of entities and agents, drawing on models of reality shaped by previous experiences.</aside>
-    </section>
-
-    <!-- 33 — Integration challenge -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>The Integration Challenge</h2>
-      <ul>
-        <li>Combining approaches likely necessary for human-like event parsing</li>
-        <li>Online SFA is already computationally expensive</li>
-        <li>Integration is, for now, out of reach</li>
-      </ul>
-      <aside class="notes">Pushing SFA toward human-like event parsing would likely require combining or coordinating these approaches. Unsurprisingly, online SFA is already computationally expensive, so this integration is for now out of our reach.</aside>
-    </section>
-
-    <!-- 34 — SFA's potential -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>SFA's Potential</h2>
-      <ul>
-        <li>Refined SFA + salience systems</li>
-        <li>Ongoing, continuously updating prediction-failure processing</li>
-        <li>Equilibrium-disequilibrium tracking</li>
-        <li>→ Emergent event recognition</li>
-      </ul>
-      <aside class="notes">If online SFA in computer vision can be refined to incorporate the strengths of probabilistic, multi-modal, and other forms of SFA, it might be employed in conjunction with salience systems to provide ongoing, continuously updating prediction-failure processing and equilibrium-disequilibrium tracking — elements that generate emergent event recognition.</aside>
-    </section>
-
-    <!-- 35 — Computational models of decision making -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Computational Models of Decision Making</h2>
-      <ul>
-        <li>Reinforcement learning research models prediction error</li>
-        <li>Higher-order, top-down functions shaping event experience</li>
-        <li>How prediction error guides state apprehension</li>
-      </ul>
-      <aside class="notes">While SFA might provide a building block for human-like event parsing, computational models of how we make decisions might provide ways to leverage models derived from prior experiences in event parsing. Scientists studying decision making and reinforcement learning have developed models that shed light on how prediction error figures into state apprehension and guides decision making.</aside>
-    </section>
-
-    <!-- 36 — Coglinks -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Coglinks</h2>
-      <ul>
-        <li>Models RL processes for switching between decision strategies</li>
-        <li>Model-based vs. model-free processing</li>
-        <li>Alters existing models or shapes new models of unfamiliar states</li>
-      </ul>
-      <aside class="notes">Coglinks models the reinforcement learning processes that trigger switching between model-based and model-free processes for decision making, and subsequently, the processes that alter existing models or shape new models of unfamiliar states.</aside>
-    </section>
-
-    <!-- 37 — Coglinks' key mechanism -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Coglinks' Key Mechanism</h2>
-      <ul>
-        <li>Prediction error guides switching between processing modes</li>
-        <li>Captures dynamics of event navigation</li>
-        <li>How prediction error and uncertainty shape event navigation</li>
-      </ul>
-      <aside class="notes">The key mechanism in Coglinks is the use of prediction error to guide the switching between model-based and model-free processes. As such, Coglinks begins to capture the dynamics of how prediction error and uncertainty shape the navigation of events, and how these processes might be modeled computationally.</aside>
-    </section>
-
-    <!-- 38 — Coglinks' limitations -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Coglinks' Limitations</h2>
-      <ul>
-        <li>Does not model the processes that generate choices</li>
-        <li>Does not model event parsing as a generator of choices</li>
-        <li>Gap: familiar and novel contexts</li>
-      </ul>
-      <aside class="notes">However, Coglinks does not model the processes that generate choices, nor does it model event parsing as a means of generating choices in familiar or novel contexts.</aside>
-    </section>
-
-    <!-- 39 — From well-defined to fuzzy choices -->
-    <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>From Well-Defined to Fuzzy Choices</h2>
-      <ul>
-        <li>From: modeling uncertainty about well-defined choices</li>
-        <li>To: emergence of choices from predictive processing</li>
-        <li>Including ill-defined problems and online decision navigation</li>
-        <li>Learning by abstracting from event experiences</li>
-      </ul>
-      <aside class="notes">Computational approaches to uncertainty like Coglinks can be developed to transition from modeling uncertainty about well-defined choices to modeling the emergence of choices from the fuzzy, uncertain domain of predictive processing — including ill-defined problems, and learning from online decision navigation in the form of abstracting from event experiences.</aside>
-    </section>
-
-    <!-- 40 — Narrative and active inference (quote) -->
-    <section class="quote-slide" data-background-color="#F8F9FC">
-      <h2>Narrative and Active Inference</h2>
+    <!-- 24 — Two research areas (section break) -->
+    <section class="title-slide" data-background-color="#1C2E4A">
+      <p class="question">towards narrative as active inference</p>
       <div class="quote-box">
         <p class="quote-text">"Narratives are particularly useful for active inference because they can contribute to both the conservative processes that maintain old memories and use them as models for new events, as well as generating new models through their recombination or projection to produce new stories."</p>
         <p class="attribution">— Bouizegarene et al. (2025)</p>
       </div>
-      <aside class="notes">Bouizegarene et al. (2025) ascribe ongoing narrative construction a crucial role in refining cognitive models: "Narratives are particularly useful for active inference because they can contribute to both the conservative processes that maintain old memories and use them as models for new events, as well as generating new models through their recombination or projection to produce new stories."</aside>
+      <aside class="notes">Bouizegarene et al. (2025) ascribe ongoing narrative construction a crucial role in refining cognitive models: "Narratives are particularly useful for active inference because they can contribute to both the conservative processes that maintain old memories and use them as models for new events, as well as generating new models through their recombination or projection to produce new stories." I want to highlight two areas of research that attempt to create computational models related to event parsing: slow feature analysis and processing uncertainty.</aside>
     </section>
 
-    <!-- 41 — What we need next -->
+    <!-- 25 — What is SFA? -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>What We Need Next</h2>
-      <ul>
-        <li>Computationally simulate ongoing narrative processing as active inference</li>
-        <li>Valuation systems supporting emergent event processing</li>
-        <li>Can these be modeled computationally?</li>
-      </ul>
+      <p class="question">slow feature analysis</p>
+      <aside class="notes">Slow Feature Analysis (SFA) is a computational technique that identifies slowly varying features in time series data, which can be used to detect event boundaries. SFA has been applied in computer vision and robotics to improve the understanding of dynamic environments.</aside>
+    </section>
+
+    <!-- 26 — SFA and biological vision -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question">sfa and biological vision</p>
+      <aside class="notes">According to Song et al., SFA extracts temporal features whose "slow" organizing principle is consistent with the nature of biological vision.</aside>
+    </section>
+
+    <!-- 27 — Types of SFA -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question">types of sfa</p>
+      <img class="slide-figure" src="figures/sfa-types.gif" alt="Table of SFA categories, effects, methods, and applications: Dual Input SFA, Online SFA, Probabilistic SFA, Multi-mode SFA, Nonlinear SFA, and Discrete labeled SFA.">
+      <p class="slide-figure-caption">Song &amp; Zhao (2022), n.p.</p>
+      <aside class="notes">Song et al. describe several types: online SFA, multi-modal SFA, and probabilistic SFA.</aside>
+    </section>
+
+    <!-- 28 — Online SFA -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question">online sfa</p>
+      <aside class="notes">Online SFA is particularly relevant for real-time event parsing, as it allows for continuous updating of the model as new data arrives.</aside>
+    </section>
+
+    <!-- 29 — Multi-modal and probabilistic SFA -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question">multi-modal and probabilistic sfa</p>
+      <aside class="notes">Multi-modal SFA integrates information from different sensory modalities, enhancing the robustness of event detection. Probabilistic SFA incorporates likelihood distributions into the recognition of entities and agents, drawing on models of reality shaped by previous experiences.</aside>
+    </section>
+
+    <!-- 30 — Integration challenge -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question">the integration challenge</p>
+      <aside class="notes">Pushing SFA toward human-like event parsing would likely require combining or coordinating these approaches. Unsurprisingly, online SFA is already computationally expensive, so this integration is for now out of our reach.</aside>
+    </section>
+
+    <!-- 31 — SFA's potential -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question">sfa's potential</p>
+      <aside class="notes">If online SFA in computer vision can be refined to incorporate the strengths of probabilistic, multi-modal, and other forms of SFA, it might be employed in conjunction with salience systems to provide ongoing, continuously updating prediction-failure processing and equilibrium-disequilibrium tracking — elements that generate emergent event recognition.</aside>
+    </section>
+
+    <!-- 32 — Computational models of decision making -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question">computational models of decision making</p>
+      <aside class="notes">While SFA might provide a building block for human-like event parsing, computational models of how we make decisions might provide ways to leverage models derived from prior experiences in event parsing. Scientists studying decision making and reinforcement learning have developed models that shed light on how prediction error figures into state apprehension and guides decision making.</aside>
+    </section>
+
+    <!-- 33 — Coglinks -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question"> coglinks</p>
+      <aside class="notes">Coglinks models the reinforcement learning processes that trigger switching between model-based and model-free processes for decision making, and subsequently, the processes that alter existing models or shape new models of unfamiliar states.</aside>
+    </section>
+
+    <!-- 34 — Coglinks' key mechanism -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question"> coglinks' key mechanism</p>
+      <aside class="notes">The key mechanism in Coglinks is the use of prediction error to guide the switching between model-based and model-free processes. As such, Coglinks begins to capture the dynamics of how prediction error and uncertainty shape the navigation of events, and how these processes might be modeled computationally.</aside>
+    </section>
+
+    <!-- 35 — Coglinks' limitations -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question"> coglinks' limitations</p>
+      <aside class="notes">However, Coglinks does not model the processes that generate choices, nor does it model event parsing as a means of generating choices in familiar or novel contexts.</aside>
+    </section>
+
+    <!-- 36 — From well-defined to fuzzy choices -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question">from well-defined to fuzzy choices</p>
+      <aside class="notes">Computational approaches to uncertainty like Coglinks can be developed to transition from modeling uncertainty about well-defined choices to modeling the emergence of choices from the fuzzy, uncertain domain of predictive processing — including ill-defined problems, and learning from online decision navigation in the form of abstracting from event experiences.</aside>
+    </section>
+
+    <!-- 37 — What we need next -->
+    <section class="content-slide" data-background-color="#F8F9FC">
+      <p class="question">what's next</p>
       <aside class="notes">To move toward computationally simulating ongoing narrative processing as a form of active inference, we need to delve into the nature of the valuation systems that support emergent event processing in human cognition — and ask whether they can be modeled computationally.</aside>
     </section>
 
-    <!-- 42 — Emotional systems and weak narrativity -->
+    <!-- 38 — Emotional systems and weak narrativity -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Emotional Systems and Weak Narrativity</h2>
-      <ul>
-        <li>Emotional systems: ongoing, dynamic valuations of salience and valence</li>
-        <li>Modulate equilibrium-disequilibrium patterns</li>
-        <li>Modulate prediction-failure patterns</li>
-        <li>→ Weak narrativity</li>
-      </ul>
+      <p class="question">emotional systems and weak narrativity</p>
       <aside class="notes">In my previous work, I ascribed significance to the emotional processes that support event cognition: emotional systems support ongoing, dynamic valuations of salience and valence. In the function of these systems in modulating the equilibrium-disequilibrium and prediction-failure patterns of event processing, I see what I call weak narrativity.</aside>
     </section>
 
-    <!-- 43 — The design question -->
+    <!-- 39 — The design question -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>The Design Question</h2>
-      <ul>
-        <li>How can ongoing valuation systems be designed so that event cognition leverages valuation dynamism?</li>
-        <li>How can events be perceptually emergent?</li>
-      </ul>
+      <p class="question">the design question</p>
       <aside class="notes">How can ongoing valuation systems be designed so that event cognition leverages valuation dynamism? That is, how can events be perceptually emergent?</aside>
     </section>
 
-    <!-- 44 — Attention architecture -->
+    <!-- 40 — Attention architecture -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Attention Architecture</h2>
-      <ul>
-        <li>Perceptually emergent events depend on a dynamic, systemic attention architecture</li>
-        <li>Attention and prediction failure</li>
-        <li>Attention and the awareness model</li>
-      </ul>
+      <p class="question">attention architecture</p>
       <aside class="notes">This leads to the second major topic: perceptually emergent events must depend, in part, on a dynamic, systemic attention architecture — specifically, the relationship between attention and prediction failure, and between attention and the awareness model.</aside>
     </section>
 
-    <!-- 45 — Future directions -->
+    <!-- 41 — Future directions -->
     <section class="content-slide" data-background-color="#F8F9FC">
-      <h2>Future Directions: Memory and Abstraction</h2>
-      <ul>
-        <li>How are event segments shaped by memory of previous events?</li>
-        <li>How do salient, valent events get abstracted into general knowledge?</li>
-        <li>Episodic → semantic memory</li>
-      </ul>
+      <p class="question">future directions: memory and abstraction</p>
       <aside class="notes">These are topics for future consideration. They lead, subsequently, to questions about how to model human-like learning and abstraction: how are event segments shaped by memory of previous events, and how do salient, valent events get abstracted into general knowledge — as human cognition does with its ongoing processing of episodic into semantic memory?</aside>
     </section>
 
