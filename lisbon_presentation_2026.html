@@ -159,6 +159,19 @@
       flex: 0 0 auto;
       margin-top: 1.2em;
     }
+    .fail-clip-stage {
+      margin-top: 1.4em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 70%;
+    }
+    .fail-clip-stage video {
+      max-width: 100%;
+      max-height: 50vh;
+      border-radius: 8px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+    }
 
     /* ── EVENT-SEQUENCE NAV (slides 18–23) ───────────────── */
     .sequence-slide {
@@ -598,6 +611,15 @@
       <aside class="notes">These are topics for future consideration. They lead, subsequently, to questions about how to model human-like learning and abstraction: how are event segments shaped by memory of previous events, and how do salient, valent events get abstracted into general knowledge — as human cognition does with its ongoing processing of episodic into semantic memory?</aside>
     </section>
 
+    <!-- 42 — Discussion -->
+    <section class="title-slide" data-background-color="#1C2E4A">
+      <p class="question">discussion</p>
+      <div class="fail-clip-stage">
+        <video id="fail-clip-1" src="video/aidol_fall.mp4" autoplay muted playsinline></video>
+        <video id="fail-clip-2" src="video/optimus_headset_fall.mp4" muted playsinline style="display:none;"></video>
+      </div>
+    </section>
+
     <!-- ============================================================= -->
     <!-- APPENDIX / NOT PRESENTED — topic slides with quote dumps in    -->
     <!-- presenter notes, for reference while drafting; not part of    -->
@@ -667,6 +689,21 @@
     margin: 0,
     plugins: [ RevealNotes ],
   });
+</script>
+<script>
+  (function () {
+    var clips = [document.getElementById('fail-clip-1'), document.getElementById('fail-clip-2')];
+    if (!clips[0] || !clips[1]) return;
+    clips[0].addEventListener('ended', function () {
+      clips[0].style.display = 'none';
+      clips[1].style.display = '';
+      clips[1].currentTime = 0;
+      clips[1].play();
+    });
+    clips[1].addEventListener('ended', function () {
+      clips[1].style.display = 'none';
+    });
+  })();
 </script>
 </body>
 </html>
