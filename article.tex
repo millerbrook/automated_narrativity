@@ -63,49 +63,47 @@ This article describes the function of ongoing narrative processing in human int
 
 My previous research advanced the following hypothesis: Ongoing narrative processing helps us solve a fundamental cognitive problem: orienting ourselves towards, framing responses to, and retroactively parsing experience.
 
-Given that hypothesis, today I want to consider a question: if narrative processing is crucial to human cognition, is it a crucial direction for research pushing AI towards human-likeAGI?
-% Expand this section with detailed discussion
+Given that hypothesis, today I want to consider a question: if narrative processing is crucial to human cognition, is it a crucial direction for research pushing AI towards human-like AGI?
+
 \subsection{Word Search Junkies}
-This question motivates me in part because of the conversation about AGI we've been having since December 2022, when OpenAI released ChatGPT.
-After a wave of articles projecting the capabilities of large language models into a future artifical general intelligence, there has been a noticeable series of popular public pushbacks.
+This question motivates me in part because of the conversation about AGI we've been having since December 2022, when OpenAI released ChatGPT. After a wave of articles projecting the capabilities of large language models into a future artificial general intelligence, there has been a noticeable series of popular public pushbacks.
 
-Ted Chiang's recent piece in the Atlantic is a good reminder of what large language models are: sentence completion machines.
-Chiang's consideration of the leap from simulation to actuality -- simulating a conversation to actually conversing, for example,
-Anthropic's anthropomorphic identity document.
+Ted Chiang's recent piece in the Atlantic and Zeynep Tufekci's recent piece in the New York Times are both good reminders of what large language models are: sentence completion machines \citep{chiang_plausibility,tufekci2026hype}.
 
-Zeynep Tufekci's recent piece in the New York Times is a good reminder of what large language models are: sentence completion machines.
+Robert Long, in his SubStack \textit{Experiencing Machines}, characterizes one side of this debate as LLM-sneering. The sneerer's argument goes something like:
 
-Robert Long, in his SubStack Experiencing Machines, characterizes these arguments as LLM-sneering, where doubters of the capabilities of large language models might say something like "You think that LLMs could be conscious? Absurd! Don’t you know that LLMs are just predicting the next token? Plus, they make stuff up; their preferences are contradictory; their introspection is unreliable; and they’re confused about who they even are!”
+\begin{quote}
+``You think LLMs could be conscious? Absurd! Don't you know that LLMs are just predicting the next token? Plus, they make stuff up; their preferences are contradictory; their introspection is unreliable; and they're confused about who they even are!'' \citep{long2026experience}
+\end{quote}
 
-On the other side, defenses of LLMs' intelligence might retort “Aha, well…aren’t humans just predicting the next token? Plus, humans make stuff up, and humans have contradictory preferences; our introspection is unreliable, and we’re really confused about who we are too!”
+On the other side, defenders of LLMs' intelligence might retort:
 
-Long encourages us not to adopt either of these straw man positions, but instead consider both differences in how LLMs and humans are trained and behave, as well as the sources of the kinds of errors they make.
+\begin{quote}
+``Aha, well -- aren't humans just predicting the next token? Plus, humans make stuff up, and humans have contradictory preferences; our introspection is unreliable, and we're really confused about who we are too!'' \citep{long2026experience}
+\end{quote}
 
-My talk will operate in this spirit -- I want to think with you about how AI might be trained to more closely resemble human cognition, with an emphasis on the topic that most concerns us: the relationship between narrative and cognition.
+Long encourages us not to adopt either of these straw man positions, but instead to consider both the differences in how LLMs and humans are trained and behave, as well as the sources of the kinds of errors they make.
 
-For starters, consider one of Long's observations about how LLMs differ from humans: LLMs "learned language first and would bootstrap any potential experiences from that, whereas humans can have experiences independently of using language to describe them."
+My talk operates in that spirit -- I want to think with you about how AI might be trained to more closely resemble human cognition, with an emphasis on the topic that most concerns us: the relationship between narrative and cognition.
 
-I've seen related claims about LLMs' lack of phenomenal, perceptual, proprioceptive, emotional, and other processes we consider human.
+For starters, consider one of Long's observations about how LLMs differ from humans:
 
-It may make sense to ask what it is like to be a bat, but asking a similar question about LLMs seems dubious.
+\begin{quote}
+``[LLMs] learned language first and would bootstrap any potential experiences from that, whereas humans can have experiences independently of using language to describe them.'' \citep{long2026experience}
+\end{quote}
 
-If we are seeking developments in AI that might have increased similarity to human cognition, I believe the 'bootstrapping' problem means it makes sense to look elsewhere.
+I've seen related claims about LLMs' lack of phenomenal, perceptual, proprioceptive, emotional, and other processes we consider human. It may make sense to ask what it is like to be a bat -- but asking a similar question about LLMs seems dubious.
 
-I believe we should look areas of research in computer vision.
+If we are seeking developments in AI that might have increased similarity to human cognition, the bootstrapping problem means it makes sense to look elsewhere. I believe we should look at areas of research in computer vision.
 
-Now, I imagine that some of you have watched videos of Waymo cars endlessly circling roundabouts and Atlanta neighborhoods, so you have good reason for skepticism.
+You might be skeptical. I imagine some of you have watched videos like this of Waymo cars endlessly circling roundabouts and bumping one another, so you have good reason. Even so, moving vehicles do not ipso facto have the bootstrapping problem. And I think computer vision research will increasingly focus on one of the bases of having experiences: event segmentation.
 
-Even so, I think moving vehicles do not ipso facto have the bootstrapping problem.
-
-Also, I think computer vision research will increasingly focus on one of the bases of having experiences: event segmentation.
-
-Event Segmentation Theory (EST) offers a precise account of where event boundaries come from. An event is, at minimum,
+\subsection{Events, Prediction, and Narrative}
+Event Segmentation Theory (EST) offers a helpful account of where event boundaries come from. Thomas Shipley puts it simply: events ``appear to be a fundamental unit of experience'' \citep[p.~5]{shipley2008invitation} -- not merely an analytic convenience applied after the fact, but something experienced in the temporal present and only subsequently refined and repurposed in episodic memory. Jeffrey Zacks and Barbara Tversky define an event, at minimum, as
 
 \begin{quote}
 ``a segment of time at a given location that is perceived by an observer to have a beginning and an end'' \citep[p.~3]{zackstversky2001event}
 \end{quote}
-
-Events, as Thomas Shipley suggests, ``appear to be a fundamental unit of experience'' \citep[p.~5]{shipley2008invitation} -- not merely an analytic convenience applied after the fact, but something experienced in the temporal present and only subsequently refined and repurposed in episodic memory.
 
 Boundaries between events are generated dynamically, as a byproduct of prediction:
 
@@ -113,82 +111,64 @@ Boundaries between events are generated dynamically, as a byproduct of predictio
 ``One central proposal of the EST model is that event segmentation is a spontaneous outcome of ongoing perception and arises at points where perceptual predictions begin to fail or change\ldots The period of epoch between two such consecutive changes current mental models is an event.'' \citep[p.~591]{shipleyzacks2008understanding}
 \end{quote}
 
-Richard Menary, one of the leading thinkers challenging top-down views of how narrative might affect cognition, offers a bottom-up alternative:
+So where does narrative come in? Richard Menary, one of the leading thinkers challenging top-down views of how narrative might affect cognition, offers a bottom-up alternative:
 
 \begin{quote}
 ``It is not narratives that shape experiences but, rather, experiences that structure narratives\ldots The mistake is again to suppose that a narrative conceived in abstraction could be brought to bear on a sequence of experiences, ordering them and giving them meaning.'' \citep[p.~79]{menary2008embodied}
 \end{quote}
 
-Event segmentation, on this view, is not merely compatible with Menary's bottom-up account -- it is one of its mechanisms. The ongoing, meaning-directed generation of temporal structure that EST describes is exactly the kind of experience-level process Menary says narrative must draw on rather than impose:
+The temporal ordering Menary describes is already there, in lived, embodied experience -- narrative draws on that structure rather than authoring it. Event segmentation, on this view, is not merely compatible with Menary's bottom-up account -- it is one of its mechanisms:
 
 \begin{quote}
 ``I'll highlight the emergence in event segmentation and episodic memory processes of dynamics fundamental to the definition of weak narrativity\ldots Narrative processing is ongoing meaning-directed generation and processing of emergent temporal structures consisting of related value-dynamic sequences involving value-dynamic selected agents, mediated by socio-cultural contexts.'' \citep[p.~124]{miller2023eventsweaknarrativity}
 \end{quote}
 
-If we refer back to the 'LLM-sneerers', we note that their critique centers around the reductive way that LLMs are 'generative' -- they predict the next token based on previous tokens.
+Event segmentation involves an ongoing process as we determine what is relevant, how various agents and forces affect one another, and how an equilibrium state might be resolved: it is ongoing, in-the-moment generation of the value-dynamic temporal structures Menary says experience must supply.
 
-'LLM-defenders' counter not only that humans also predict, but that LLMs can come from complex forms of context.
+This depends on prediction. But what does prediction mean in this case? Recall the LLM-sneerers: their critique centers on the reductive way that LLMs are generative -- they predict the next token based on previous tokens. Defenders counter that humans also predict, and that LLMs can draw on complex forms of context. But this form of prediction is quite different from how prediction functions in ongoing experience:
 
-But I'd like to point out that this form of prediction is quite different from how prediction functions in ongoing experiences.
 \begin{quote}
 ``As an event proceeds, predictions are relatively accurate. However, as it ends, prediction error increases, causing a reset of the event model. When such a reset occurs, an event boundary is set.'' \citep[p.~135]{miller2023eventsweaknarrativity}
 \end{quote}
 
-This kind of prediction requires online processing of ongoing experience. Which brings us back to Waymo and computer vision.
+This kind of prediction requires online processing of ongoing experience. Which brings us back to Waymo and computer vision: it is imperative that Waymos, other autonomous vehicles, and other embodied AI systems have robust event parsing capabilities.
 
-It is imperative that Waymos, other autonomous vehicles, and other embodied AI systems have robust event parsing capabilities. 
+\subsection{Towards Narrative as Active Inference: Slow Feature Analysis and Coglinks}
+But how is this event segmentation related to narrative processing? \citet{bouizegarene2024narrative} ascribe ongoing narrative construction a crucial role in refining cognitive models:
 
-I want to highlight two areas of research that attempt to create computational models related to event parsing: slow feature analysis and processing uncertainty.
+\begin{quote}
+``Narratives are particularly useful for active inference because they can contribute to both the conservative processes that maintain old memories and use them as models for new events, as well as generating new models through their recombination or projection to produce new stories.'' \citep{bouizegarene2024narrative}
+\end{quote}
 
-Slow feature analysis (SFA) is a computational technique that identifies slowly varying features in time series data, which can be used to detect event boundaries. SFA has been applied in various domains, including computer vision and robotics, to improve the understanding of dynamic environments.
+To consider what it would take for computer vision to employ this form of inference, I want to highlight two areas of research that attempt to create computational models related to event parsing: slow feature analysis and processing uncertainty.
 
-According to \citet{song2022slow}, SFA extracts temporal features whose 'slow' organizing principle is consistent with the nature of biological vision \citep{song2022slow}"
-Song et. al. describe several types of SFA, including online SFA, multi-modal SFA, and probabilistic SFA.
-Online SFA is particularly relevant for real-time event parsing, as it allows for continuous updating of the model as new data arrives. Multi-modal SFA can integrate information from different sensory modalities, enhancing the robustness of event detection. Probabilistic SFA incorporates likelihood distributions into the recognition of entities and agents, drawing on models of reality shaped by previous experiences.
-In pushing SFA towards providing a basis for human-like event parsing, researchers would likely need to combine or at least coordinate these approaches.
-Unsurprisingly, online SFA is already computationally expensive, so this integration is for now out of our reach.
-If online SFA in computer vision can continue to be refined to incorporate the strengths of probabilistic, multi-modal, and other forms of SFA, it might be employed in conjunction with salience systems to provide ongoing, continuously updating prediction failure processing and equilibrium-disequilibrium-tracking. These elements generate emergent event recognition.
+Slow feature analysis (SFA) is a computational technique that identifies slowly varying features in time series data, which can be used to detect event boundaries. SFA has been applied in computer vision and robotics to improve the understanding of dynamic environments:
 
-While SFA might provide a building block for human-like event parsing, computational models of how we make decisions might provide ways to leverage models derived from prior experiences in event parsing.
+\begin{quote}
+``Temporal data contain a wealth of valuable information, playing an essential role in various machine-learning tasks. Slow feature analysis (SFA), one of the most classic temporal feature extraction models, extracts slowly varying features as high-level representations of temporal data.'' \citep{song2022slow}
+\end{quote}
 
-Scientists studying decision making and reinforment learning have developed computational models that shed light on how prediction error figures into state apprehension and guides decison making. Thus, they focus on higher order functions that shape, top-down, the experience of events and navigation through them. Coglinks models the reinforcement learning processes that trigger switching between model-based and model-free processes for decision making, and subsequently, the processes that alter extant models or shape new models of unfamiliar states.
+According to \citet{song2022slow}, SFA extracts temporal features whose ``slow'' organizing principle is consistent with the nature of biological vision. Song and Zhao describe several types of SFA, including online SFA, multi-modal SFA, and probabilistic SFA. Online SFA is particularly relevant for real-time event parsing, as it allows for continuous updating of the model as new data arrives. Multi-modal SFA integrates information from different sensory modalities, enhancing the robustness of event detection. Probabilistic SFA incorporates likelihood distributions into the recognition of entities and agents, drawing on models of reality shaped by previous experiences.
 
-The key mechanism in Coglinks is the use of prediction error to guide the switching between model-baesd and model-free processes. 
-As such, Coglinks begins to capture the dynamics of how prediction error and uncertainty shape the navigation of events, and how these processes might be modeled computationally.
-However, Coglinks does not model the processes that generate choices, nor does it model event parsing as a means of generating choices in familiar or novel contexts.
+Pushing SFA toward human-like event parsing would likely require combining or coordinating these approaches. Unsurprisingly, online SFA is already computationally expensive, so this integration is for now out of our reach. If online SFA in computer vision can be refined to incorporate the strengths of probabilistic, multi-modal, and other forms of SFA, it might be employed in conjunction with salience systems to provide ongoing, continuously updating prediction-failure processing and equilibrium-disequilibrium tracking -- elements that generate emergent event recognition.
 
-In this context of ongoing emerging event cognition, computational approaches to uncertainty like Coglinks can be developed to transition from modeling uncertainty about well-defined choices to modeling the emergence of choices from the fuzzy, uncertain domain of predictive processing, of the navigation of choices marked by uncertainty, including ill-defined problems, and of learning from online decision navigation, taking the form of abstracting from event experiences.
+While SFA might provide a building block for human-like event parsing, computational models of how we make decisions might provide ways to leverage models derived from prior experiences in event parsing. Scientists studying decision making and reinforcement learning have developed models that shed light on how prediction error figures into state apprehension and guides decision making. Coglinks models the reinforcement learning processes that trigger switching between model-based and model-free processes for decision making, and subsequently, the processes that alter existing models or shape new models of unfamiliar states \citep{wang2025neural}.
 
-Bouizegarene et. al. (2025) ascribe ongoing narrative construction a crucial role in refining cognitive models:
+The key mechanism in Coglinks is the use of prediction error to guide the switching between model-based and model-free processes. As such, Coglinks begins to capture the dynamics of how prediction error and uncertainty shape the parsing of events, and how these processes might be modeled computationally \citep{wang2025neural}. However, Coglinks does not model the processes that generate choices, nor does it model event parsing as a means of generating choices in familiar or novel contexts.
 
-"Narratives are particularly useful for active inference because they can contribute to both the conservative processes that maintain old memories and use them as models for new events, as well as generating new models through their recombination or projection to produce new stories."
+Computational approaches to uncertainty like Coglinks can be developed to transition from modeling uncertainty about well-defined choices to modeling the emergence of choices from the fuzzy, uncertain domain of predictive processing -- including ill-defined problems, and learning from online decision navigation in the form of abstracting from event experiences.
 
-To move in the direction of computationally simulating ongoing narrative processing as a form of active inference, we need to delve into the nature of the valuation systems that support emergent event processing in human cognition, and whether they be modeled computationally? In my previous work, I ascribed significance to the emotional pocesses that support event cognition: emotional systems support ongoing, dynamic valuations of salience and valence. In the function of these systems in modulating the equilibrium-disequilibrium and prediction failure patterns of event processing I see weak narrativity. 
+\subsection{What We Need Next}
+To move toward computationally simulating ongoing narrative processing as a form of active inference, we need to delve into the nature of the valuation systems that support emergent event processing in human cognition -- and ask whether they can be modeled computationally.
 
-How can ongoing valuation systems be designed so that event cognition leverages valuation dynamism? That is, how can events be perceptually emergent?
+In my previous work, I ascribed significance to the emotional processes that support event cognition: emotional systems support ongoing, dynamic valuations of salience and valence. In the function of these systems in modulating the equilibrium-disequilibrium and prediction-failure patterns of event processing, I see what I call weak narrativity \citep{miller2023eventsweaknarrativity}.
 
-This leads to the second topic: perceptually emergent events must depend, in part, on a dynamic, systemic attention architecture.
-    a. attention and prediction failure
-    b. attention and the awareness model
+How can ongoing valuation systems be designed so that event cognition leverages valuation dynamism? That is, how can events be perceptually emergent and learned from?
 
-These are topics for future consideration. They lead, subsequently, to questions about how to model human-like leaning and abstraction. How are event segments shaped by memory of previous events, and ow do salient, valent events get abstracted into general knowledge, as human cognition does with its ongoing processing of episodic into semantic memory?
+This leads to the second major topic: perceptually emergent events must depend, in part, on a dynamic, systemic attention architecture -- specifically, the relationship between attention and prediction failure, and between attention and the awareness model.
 
-\subsection{Event parsing: the challenges of recognition; }
-Narrativity and Cognition model of event parsing.
-    role of attention
-    N&C theory of how attention is modulated
-        division betwen 'functional understanding and phenomenological understanding' (DHSI keynote) is reductive -- as
-        we develop systems that approach intelligence, we must question whether 'phenomenological understanding'
-        is the root of what we mean by 'intelligence', or whether it is simply a necessary partner for humans, 
-        a fundamental part of the processing that leads to intelligence. that distinction sounds small, but if AI is
-        to be pushed towards 'intelligence' , it is important, because perhaps the links between how intellignece develops
-        in humans and how it develops in AI are 
-How event parsing is subsumed in larger time series
-    think about the Waymo endless circling in terms of this
-    now, we COULD just solve this with a 'Do' loop
-        but that differs significantly from human intelligence, and the larger motivations, cares, and needs
-        that drive, curtail, and otherwise shape our behaviors
-    what is the nature of these time series?
+These are topics for future consideration. They lead, subsequently, to questions about how to model human-like learning and abstraction: how are event segments shaped by memory of previous events, and how do salient, valent events get abstracted into general knowledge -- as human cognition does with its ongoing processing of episodic into semantic memory?
+
 \subsection{Orienting Towards Experience}
 
 % Content to be developed
@@ -233,6 +213,28 @@ How event parsing is subsumed in larger time series
 %=============================================================================
 
 % Outline research directions that might lead to human-like event processing
+
+% Raw brainstorming, relocated from sec:problem 2026-07-16 -- not yet developed
+% into prose. Retained here as working notes rather than deleted.
+%
+% Narrativity and Cognition model of event parsing.
+%     role of attention
+%     N&C theory of how attention is modulated
+%         division between 'functional understanding and phenomenological understanding'
+%         (DHSI keynote) is reductive -- as we develop systems that approach intelligence,
+%         we must question whether 'phenomenological understanding' is the root of what we
+%         mean by 'intelligence', or whether it is simply a necessary partner for humans,
+%         a fundamental part of the processing that leads to intelligence. That distinction
+%         sounds small, but if AI is to be pushed towards 'intelligence', it is important,
+%         because perhaps the links between how intelligence develops in humans and how it
+%         develops in AI are [unfinished]
+% How event parsing is subsumed in larger time series
+%     think about the Waymo endless circling in terms of this
+%     now, we COULD just solve this with a 'Do' loop
+%         but that differs significantly from human intelligence, and the larger
+%         motivations, cares, and needs that drive, curtail, and otherwise shape our
+%         behaviors
+%     what is the nature of these time series?
 
 \subsection{Direction 1}
 
